@@ -1,0 +1,15 @@
+# VS / Build stuff
+bin/
+obj/
+.vscode/
+*.suo
+*.user
+
+# Python
+__pycache__/
+*.pyc
+.env/
+
+# System files
+.DS_Store
+Thumbs.db
