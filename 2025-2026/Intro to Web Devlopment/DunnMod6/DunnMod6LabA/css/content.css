@@ -1,0 +1,64 @@
+/* ======== START: CONTENT SECTION ======== */
+.content {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+/* when applied to a flex container, this will vertically align the items */
+.y-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.content > figure {
+    min-height: 300px;
+}
+
+.content > figure > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content > figure > img:has(+figcaption) {
+    height: calc(100% - 1.5em);
+}
+
+.content > figure > figcaption {
+    font-style: italic;
+}
+
+.content p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    /* Adds some space for mobile */
+    [class^="flex-"] {
+        margin-bottom: 1.5em;
+    }
+}
+
+.content > [class^="flex-"] > header {
+    color: var(--dark);
+    margin-bottom: 1em;
+    border-bottom: 2px solid var(--dark);
+}
+/* ======== END: CONTENT SECTION ======== */
+

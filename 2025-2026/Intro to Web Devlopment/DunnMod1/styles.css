@@ -1,0 +1,90 @@
+/*
+
+CSS stands for cascading style sheets 
+
+selector {
+    property: value;
+    property value;
+}
+
+
+*/
+
+:root {
+    --color-dark: #4a0161; 
+    --color-light: #eeedcc;
+    --color-main: #05e933;
+    --color-link: #ff7f11; 
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    font-family: sans-serif;
+    
+
+
+}
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+body > footer {
+    background-color: var(--color-dark);
+    padding: 30px;
+    text-align: center;
+
+}
+
+body > footer a {
+    color: var(--color-link)
+
+}
+
+p {
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/*
+parent > child { }
+*/
+
+
+body > header {
+    background-color: var(--color-dark);
+    padding: 20px;
+    color: var(--color-main);
+}
+
+body > body > strong {
+    display: block;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}

@@ -1,0 +1,12 @@
+{
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "python.languageServer": "Pylance",
+    "editor.snippetSuggestions": "top",
+    "editor.wordBasedSuggestions": "allDocuments",
+    "editor.suggest.preview": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true
+}

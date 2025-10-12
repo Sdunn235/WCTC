@@ -1,0 +1,47 @@
+/* ======== START: NAV SECTION ======== */
+nav > ul > li a {
+    text-decoration: none;
+    color: var(--link);
+    padding: 10px;
+    display: block;
+    transition: background-color .2s ease-in-out, 
+                color .2s ease-in-out;
+}
+
+nav > ul > li a:hover {
+    color: var(--light);
+    background-color: var(--link);
+}
+
+nav > ul > li {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav > ul {
+    display: flex;
+    margin: 0;
+}
+
+nav.left > ul {
+    justify-content: flex-start;
+}
+
+nav.center > ul {
+    justify-content: center;
+}
+
+nav.right > ul {
+    justify-content: flex-end;
+}
+
+nav.full > ul > li {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    nav > ul {
+        flex-direction: column;
+    }
+}
+/* ======== END: NAV SECTION ======== */

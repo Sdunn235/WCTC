@@ -1,0 +1,42 @@
+.row {
+    display: flex;
+    gap: 1rem;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}
+
+[class^="flex-"] > header {
+    color: var(--color-surface-dark);
+    border-bottom: 3px solid var(--color-border-dark);
+    margin-bottom: 7px;
+}
+
+@media (max-width: 768px)
+{
+    selection > .row{
+        margin: 0;
+    }
+    .row{
+        flex-direction: column;
+        margin: 1rem;
+    }
+}
+
+.highlight {
+    background-color: var(--color-surface-dark-alt);
+    color: var(--color-text-inverse);
+    padding: 1rem;
+    padding-bottom: 25px;
+}

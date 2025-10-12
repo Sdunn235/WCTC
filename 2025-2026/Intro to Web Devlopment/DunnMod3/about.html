@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: About</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-width">
+            <strong>Menu and Forms</strong>
+            <em>Module3</em>
+            <nav class="full">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/forms.html">Forms</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main class="site-width">
+        <article>
+            <section>
+                <section>
+                    <figure>
+                        <img src="/images/about-image.png"
+                            alt="Underground train tunnel with concrete walls, steel tracks, and neatly arranged electrical cables running along the side.">
+                    </figure>
+                    <header>
+                        <h1>All About Forms</h1>
+                    </header>
+                </section>
+                <div>
+                    <section>
+                        <header>
+                            <h2>What Do Forms Do?</h2>
+                        </header>
+                        <p>Forms are how a webpage collects and sends user input to your app. An HTML
+                            "form groups interactive controls—things like input, select, and textarea and, when
+                            submitted, it
+                            packages each control’s name=value pair and sends them to the URL in the form’s action. The
+                            method
+                            decides how it’s sent: GET appends data to the URL (good for searches and bookmarkable
+                            filters),
+                            while POST sends it in the request body (better for sign-ins or anything private). Labels
+                            matter: a
+                            label for="email" tied to input id="email" name="email" boosts accessibility and tells the
+                            server what each value represents. Built-in attributes—required, maxlength, pattern,
+                            type="email|number|date"—add client-side validation; autocomplete and placeholder improve UX
+                            (but placeholders don’t replace labels). Use fieldset and legend to group related inputs,
+                            and submit with button type="submit". Behind the scenes, your server reads those
+                            name/value pairs, validates them again (never trust only the browser), and responds
+                            with a page update or JSON for JavaScript to handle. In short, forms are the
+                            semantic, accessible contract between your UI and your backend—clean structure in
+                            HTML, meaningful names, and the right method/action make them reliable and secure.
+                        </p>
+                    </section>
+                    <section>
+                        <header>
+                            <h2>Types of Form Inputs</h2>
+                        </header>
+                        <p>
+                            HTML forms provide a wide range of input types, each designed for a specific kind of user
+                            data.
+                            Choosing the right input type improves usability, validation, and accessibility.
+                            Here are the most common input types and what they’re used for:
+                        </p>
+
+                        <ul>
+                            <li><b>text</b> – Single-line input for plain text (e.g., names, usernames).</li>
+                            <li><b>password</b> – Text input that hides the characters (for secure entry like
+                                passwords).</li>
+                            <li><b>email</b> – For email addresses; includes built-in validation for proper format.</li>
+                            <li><b>number</b> – Restricts input to numeric values with optional min/max/step attributes.
+                            </li>
+                            <li><b>tel</b> – For telephone numbers; often triggers phone-friendly keyboards on mobile.
+                            </li>
+                            <li><b>url</b> – For website addresses; validates proper URL format.</li>
+                            <li><b>search</b> – Optimized single-line input for search queries.</li>
+                            <li><b>date</b> – Select a calendar date.</li>
+                            <li><b>datetime-local</b> – Select both date and time (no timezone).</li>
+                            <li><b>time</b> – For inputting times (hours and minutes, sometimes seconds).</li>
+                            <li><b>month</b> – Choose a month and year.</li>
+                            <li><b>week</b> – Choose a week number and year.</li>
+                            <li><b>color</b> – Opens a color picker tool.</li>
+                            <li><b>checkbox</b> – Allows multiple selections of options (checked/unchecked).</li>
+                            <li><b>radio</b> – Select one option from a group (only one active at a time).</li>
+                            <li><b>range</b> – Slider control for selecting a numeric value within a range.</li>
+                            <li><b>file</b> – Lets users upload one or more files.</li>
+                            <li><b>hidden</b> – Stores data not visible to the user but sent with the form.</li>
+                            <li><b>submit</b> – A button that submits the form data to the server.</li>
+                            <li><b>reset</b> – Resets all form fields to their default values.</li>
+                            <li><b>button</b> – A generic button; can be scripted with JavaScript for custom actions.
+                            </li>
+                        </ul>
+                    </section>
+                    <p>Note: The "type" attribute of the input element can be various types, which defines information field</p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <a href="mailto:sdunn15@my.wctc.edu" class="btn">&copy; Shawn Dunn | 2025</a>
+    </footer>
+</body>
+
+</html>

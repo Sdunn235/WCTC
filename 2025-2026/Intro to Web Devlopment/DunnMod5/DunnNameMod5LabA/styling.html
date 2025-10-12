@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Additions, Fun Updates to Bring Life and Joy to Page</title>
+
+    <meta name="description"
+        content="Master simple CSS styling techniques to enhance your HTML pages. Learn how to apply colors, fonts, spacing, and layouts for clean, modern web design.">
+    <meta name="keywords" content="CSS styling, HTML design, web page styles, fonts, colors, spacing, front-end styling, web design basics" >
+    <meta name="author" content="Shawn Dunn">
+    <meta name="robots" content="all">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/content.css">
+</head>
+
+<body>
+    <header class="reverse">
+        <div class="site-width">
+            <div class="pt-1 pb-1">
+                <strong>More Styling and Debugging</strong>
+                <em>Module 3 | Intro to Web Dev</em>
+            </div>
+            <nav class="full">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/styling.html">Styling</a>
+                    </li>
+                    <li>
+                        <a href="/debugging.html">Debugging</a>
+                    </li>
+                    <li>
+                        <a href="/embedding.html">Embedding</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-width">
+        <article>
+            <header>
+                <h1>
+                    Styling Additions and Updates
+                </h1>
+                <p>This website consists of the basic framework that we have set up in the previous labs. This is a
+                    jumping off point and the styles are nowhere near perfect. Frameworks serve as a starting point for
+                    our websites. When using frameworks, there generally always needs to be some element of
+                    customization and personalization as frameworks are often the baseline. We will do a few edits here,
+                    but understand that this is still not a complete solution. </p>
+            </header>
+
+            <section>
+                <div class="content">
+                    <div class="flex-1">
+                        <header>
+                            <h2>Change your colors</h2>
+                        </header>
+                        <p>Use Coolors to pick out a new set of colors. Though we use a tool like Coolors, it is not
+                            perfect and practicing picking a good palette is a skill we continually work on. </p>
+                        <a href="https://coolors.co/" class="btn btn--sm w-content m-0">Coolors.co</a>
+                    </div>
+                    <div class="flex-1 ">
+                        <header>
+                            <h2>Change the font</h2>
+                        </header>
+                        <p>Update the fonts on the website. In the styles.css page, you will see that there is a
+                            variable for <em>header-typeface</em> and a variable for <em>body-typeface</em>. Update both
+                            values to use a Google font. Make sure to load the fonts in your head section on each page.
+                        </p>
+                        <a href="https://fonts.google.com/" class="btn btn--sm w-content m-0">Google Fonts</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="flex-1">
+                        <header>
+                            <h2>Creating a Favorite Icon</h2>
+                        </header>
+                        <p>Use a favicon generator to add a favicon to the root of your website. This is the icon that
+                            shows up in the tab at the top of the page and when you favorite a page. You may need to
+                            hard refresh by doing ctrl + f5 or cmd + f5. If you have functions enabled, you will most
+                            likely need to hold your fn key as well. </p>
+                        <a href="https://favicon.io/" class="btn btn--sm w-content m-0">favicon.io</a>
+                    </div>
+                    <div class="flex-1">
+                        <header>
+                            <h2>Add a small button option</h2>
+                        </header>
+                        <p>Add another button option called <em>btn--sm</em> which will have a font-size of 1em and
+                            padding of 10px. This class will be used in conjunction with the <em>btn</em> class and
+                            should override the font-size and padding of the <em>btn</em> class. Apply that button to
+                            the elements with the <em>btn</em> classes on this page</p>
+                    </div>
+                </div>
+                <div class="content">
+
+                    <div class="flex-1">
+                        <header>
+                            <h2>Observe the changes</h2>
+                        </header>
+                        <p>Look at the following styling additions:</p>
+                        <ul>
+                            <li>multiple stylesheets</li>
+                            <li>.y-center</li>
+                            <li>.w-content</li>
+                            <li>.m-0</li>
+                            <li>.pt-1</li>
+                            <li>.pb-1</li>
+                        </ul>
+                    </div>
+                    <div class="flex-1">
+                        <!-- This is a simple fix to have something take up only half a column. 
+                            This is a quick fix, but not best practice as it will still add margins and styles for this flex even though it has no content.
+                            Take a look at this on mobile and note the extra space at the bottom -->
+                    </div>
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+</body>
+
+</html>

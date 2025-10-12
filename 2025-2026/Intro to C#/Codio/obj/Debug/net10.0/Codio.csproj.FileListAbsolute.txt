@@ -1,0 +1,14 @@
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\bin\Debug\net10.0\Codio.exe
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\bin\Debug\net10.0\Codio.deps.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\bin\Debug\net10.0\Codio.runtimeconfig.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\bin\Debug\net10.0\Codio.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\bin\Debug\net10.0\Codio.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.AssemblyInfoInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.AssemblyInfo.cs
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\refint\Codio.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\Codio.genruntimeconfig.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Codio\obj\Debug\net10.0\ref\Codio.dll

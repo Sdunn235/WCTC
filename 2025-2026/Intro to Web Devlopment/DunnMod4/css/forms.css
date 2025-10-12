@@ -1,0 +1,84 @@
+form {
+
+    background-color: #FFFFFF;
+    max-width: 500px;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+    padding: 10px;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.58);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.58);
+
+    >label,
+    >input {
+        width: 100%;
+        display: block;
+
+
+    }
+    >input {
+        padding: 5px;
+        border: none;
+        border-bottom: 2px var(--color-border-dark) solid;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    > input[type = "date"] {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    >label {
+        font-weight: bold;
+        font-size: .85rem;
+        margin-left: 8px;
+        padding-bottom: 3px;
+        color: var(--color-border-dark);
+
+
+    }
+
+    >header {
+        
+        margin: -10px -10px 1rem;
+        background-color: var(--color-surface-dark);
+        color: var(--color-text-inverse);
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    >textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+        max-height: 100%;
+        display: block;
+        margin-bottom: 0.75rem;
+        padding: 5px;
+        border-color: var(--color-border-dark);
+
+    }
+
+
+    .btn {
+    background-color: var(--color-accent-primary);
+    color: var(--color-off-black);
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    margin: 5px auto;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 5rem;
+    font-size: large;
+    &:hover {
+            cursor: pointer;
+            background-color: var(--color-accent-primary-hover);
+        }
+
+    }
+}

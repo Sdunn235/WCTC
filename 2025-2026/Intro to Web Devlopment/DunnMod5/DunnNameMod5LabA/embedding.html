@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- TODO: Add title and meta tags-->
+
+    <title>Learning To Debug and Style With Fun, Ease and With Grace</title>
+    <meta name="description"
+        content="Learn the basics of styling and debugging in HTML and CSS. Discover simple techniques to fix errors, improve layouts, and build cleaner web pages with ease.">
+    <meta name="keywords"
+        content="HTML, CSS, simple styling, debugging, web design, front-end development, layout fixes, web development basics">
+    <meta name="author" content="Shawn Dunn">
+    <meta name="robots" content="all">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+    <header class="reverse">
+        <div class="site-width">
+            <div class="pt-1 pb-1">
+                <strong>More Styling and Debugging</strong>
+                <em>Module 3 | Intro to Web Dev</em>
+            </div>
+            <nav class="full">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/styling.html">Styling</a>
+                    </li>
+                    <li>
+                        <a href="/debugging.html">Debugging</a>
+                    </li>
+                    <li>
+                        <a href="/embedding.html">Embedding</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-width">
+        <article>
+            <header>
+                <h1>
+                    Embedding Content
+                </h1>
+            </header>
+            <section class="content">
+                <div class="flex-3">
+                    <iframe class="media" src="https://www.youtube.com/embed/l2IiPyjCl_Q?si=tWYHH5Sn5MdSMLE-"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="flex-2">
+                    <header>
+                        <h2>Embedding From YouTube</h2>
+                    </header>
+                    <p>Click share on the video and select embed</p>
+                    <p>Get rid of the height and width and add our class of media</p>
+                </div>
+            </section>
+            <section class="content">
+                <div class="flex-3">
+                    <iframe class="media" src="https://player.twitch.tv/?channel=aspen&parent=127.0.0.1" frameborder="0"
+                        allowfullscreen="true" scrolling="no"></iframe>
+                </div>
+                <div class="flex-2">
+                    <header>
+                        <h2>Embedding from twitch</h2>
+                    </header>
+                    <p>Click the share button and select ember</p>
+                    <p>Make sure you switch</p>
+                    <p>Get rid of the height and width and add our class of media</p>
+                </div>
+            </section>
+            <section class="content">
+                <div class="flex-3">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px"
+                        src="https://open.spotify.com/embed/track/3QZ7uX97s82HFYSmQUAN1D?utm_source=generator&theme=0"
+                        width="100%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+                <div class="flex-2">
+                    <header>
+                        <h2>Embedding from Spotify</h2>
+                    </header>
+                    <p>Click the 3 dots > Share > Embed</p>
+                </div>
+            </section>
+
+        </article>
+    </main>
+</body>
+
+</html>

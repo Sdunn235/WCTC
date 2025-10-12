@@ -1,0 +1,14 @@
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\bin\Debug\net10.0\DunnMod1Lab.exe
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\bin\Debug\net10.0\DunnMod1Lab.deps.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\bin\Debug\net10.0\DunnMod1Lab.runtimeconfig.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\bin\Debug\net10.0\DunnMod1Lab.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\bin\Debug\net10.0\DunnMod1Lab.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.AssemblyInfoInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.AssemblyInfo.cs
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\refint\DunnMod1Lab.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\DunnMod1Lab.genruntimeconfig.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_1\DunnMod1Lab\obj\Debug\net10.0\ref\DunnMod1Lab.dll

@@ -1,0 +1,106 @@
+form {
+
+    background-color: white;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.58);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.58);
+
+    >label,
+    >input {
+        width: 100%;
+        display: block;
+
+
+    }
+
+    >input {
+        margin-bottom: 0.75rem;
+        padding: 5px;
+        border: none;
+        border-bottom: 2px var(--color-dark) solid;
+        margin-bottom: 3rem;
+        font-size: 1rem;
+
+    }
+
+    > input[type = "date"] {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    >label {
+        font-weight: bold;
+        font-size: .85rem;
+        margin-left: 2px;
+        padding-bottom: 3px;
+        color: var(--color-dark);
+
+
+    }
+
+    >header {
+        margin-bottom: 1rem;
+        padding-left: 5px;
+        color: var(--color-light2);
+        padding-bottom: 1rem;
+    }
+
+    >textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+        max-height: 100%;
+        display: block;
+        margin-bottom: 0.75rem;
+        padding: 5px;
+        border-color: var(--color-dark);
+
+    }
+
+    >select {
+        min-width: 100%;
+        max-width: 100%;
+        display: block;
+        margin-bottom: 0.75rem;
+        padding-bottom: 1px;
+        padding: 5px;
+        border: none;
+        border-bottom: 2px var(--color-dark) solid;
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+
+
+    .btn {
+    background-color: var(--color-link);
+    color: var(--color-off-black);
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    margin: 5px auto;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-top: 5rem;
+    font-size: large;
+    &:hover {
+            cursor: pointer;
+            background-color: #2092b4f8;
+        }
+
+    }
+
+    h3 {
+    padding-bottom: .5rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+}

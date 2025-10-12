@@ -1,0 +1,83 @@
+﻿// dotnet new console --use-program-main
+
+// namespaces are folders
+// -GerberModulesLab.Helpers
+
+namespace Module_3;
+// classes are files
+// classes are blueprints for objects
+// -objects are instances of classes
+
+class Program
+{   // inside of classes, we have members:
+    // -methods - functions inside of classes
+    // -properties - variables inside of classes
+
+    // main method is the entry point to our program
+    static void Main(string[] args)
+    {
+        // Calling a method is using its name followed by()
+        // -arguments are the actual values
+        // -parameters are the placeholders
+        // Console.Clear();
+        // SayHelloToSomeone("Shawn");
+        // SayHelloToSomeone("James");
+        // Console.WriteLine(FahrenheitToCelsius(100));
+        // Console.Write("Enter a temperature in degree in F");
+        // Console.WriteLine($"The temperature in Celsius is {FahrenheitToCelsius(Convert.ToInt32(Console.ReadLine()))}");
+
+        Console.WriteLine($"The velocity is {CalculateVelocity(200, 10)}");
+
+    }
+
+    // Creation of a method:
+    // 1. access modifier
+    //  -What other files (classes) can use this
+    //  -private (default), public
+    // 2. optional keyword of static
+    //  - we can not create an instance of this method
+    //  -we can use this method right of the box
+    // 3. return type
+    //  -the data type that gets sent back to a method call (using the method)
+    //  -void means nothing is sent back
+    // 4. method name
+    //  -UpperCamelCase PascalCase
+    // 5. () any parameters we want to use.
+    //  - We can have as many as we want --we separate them with ,
+    //  - datatype followed by a name
+    //  - these parameters only exist in the scope of the method
+    // 6. {} scope of the method
+    //  - all of our code goes in here
+    //  - this runs when we call the method
+    // 7. return statement
+    //  -not needed if the return type is void
+    //  -ends the method
+
+    private static void SayHello()
+    {
+        Console.WriteLine("Hello!");
+    }
+
+    // if an access modifier is not included, its private
+
+    static void SayHelloToSomeone(string name)
+    {
+        // name (the parameter) can be use like any other variable
+        // it represents a value that we don't know right now
+        Console.WriteLine("Hell " + name);
+    }
+
+
+    private static double FahrenheitToCelsius(int temp)
+    {
+        double celsiusTemp = (temp - 32) * (5 / 9.0);
+        return celsiusTemp;
+    }
+
+    private static double CalculateVelocity(double distance, double time)
+    {
+        return distance / time;
+    }
+
+
+}

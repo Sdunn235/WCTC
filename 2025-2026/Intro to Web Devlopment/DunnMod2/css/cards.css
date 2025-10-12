@@ -1,0 +1,46 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+
+}
+
+.card {
+    background-color: var(--color-light2);
+
+}
+
+
+.card__info {
+
+    padding: 10px;
+
+    header {
+
+
+        color: var(--color-dark);
+        border-bottom: solid var(--color-dark);
+        padding-bottom: 10px;
+    }
+
+    p {
+
+        color: var(--color-off-black);
+        font-style: bold;
+        padding: 10px 0px;
+    }
+
+    header>h2 {
+        padding-bottom: 5px;
+
+    }
+
+
+}
+
+figure>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}

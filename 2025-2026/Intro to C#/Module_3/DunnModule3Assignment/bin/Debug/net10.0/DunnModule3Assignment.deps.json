@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DunnModule3Assignment/1.0.0": {
+        "runtime": {
+          "DunnModule3Assignment.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DunnModule3Assignment/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

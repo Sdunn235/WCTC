@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shawn Dunn — Home</title>
+
+    <!-- per your SEO prefs -->
+    <meta name="description"
+        content="Home page for Shawn Dunn — IT professional and game dev student. Bio, contact, and a brief background overview.">
+    <meta name="keywords" content="Shawn Dunn, IT, web development, game development, resume">
+    <meta name="author" content="Shawn Dunn">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- your CSS stack -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+
+<body class="page home">
+    <header>
+        <div class="site-width">
+            <nav class="full center" aria-label="Primary">
+                <ul>
+                    <li><a class="is-active" href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="color-bar">
+        <div class="site-width">
+            <h1 class="hero_title">Shawn Dunn</h1>
+            <p class="hero_subtitle">IT Professional • Game Dev Student</p>
+        </div>
+    </div>
+
+    <main class="site-width">
+        <!-- Short Biography -->
+        <section class="row">
+            <div class="flex-2">
+                <h2>About Me</h2>
+                <p>
+                    I’m an IT-focused technician and web/software development student at WCTC. I build and maintain
+                    Windows 10/11 systems,
+                    document workflows, and practice clean, modular code in C#, Python, and web technologies. My current
+                    projects include a
+                    Tower Defense game prototype and “Lucent Forge,” an Unreal Engine simulation exploring emergent NPC
+                    behavior.
+                </p>
+            </div>
+            <!-- Contact Info -->
+            <aside class="flex-1 highlight" aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact</h2>
+                <ul class="list">
+                    <li><strong>Email:</strong> <a href="mailto:s.dunn235@gmail.com">s.dunn235@gmail.com</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:+13862371151">(386)&nbsp;237&#8209;1151</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/Sdunn235">github.com/Sdunn235</a></li>
+                    <li><strong>Location:</strong> Milwaukee / Waukesha, WI</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Summary of Education / Work Experience -->
+        <section class="row">
+            <div class="flex-1">
+                <h2>Education &amp; Work Summary</h2>
+                <p>
+                    I’m pursuing an AAS in IT: Web &amp; Software Development (2024–Present) at WCTC. Professionally, I
+                    bring several years
+                    of hands-on technical and manufacturing experience—programming and operating CNC/EDM equipment,
+                    writing process
+                    documentation, and training peers—which translates directly into careful troubleshooting and
+                    reproducible IT practices.
+                </p>
+                <p>
+                    On the software side, I’m progressing through coursework in C#, Java, Python, SQL, HTML/CSS/JS, and
+                    I maintain projects
+                    in GitHub with an emphasis on readability and versioned iterations.
+                </p>
+            </div>
+        </section>
+        <section aria-labelledby="goals-heading" class="highlight">
+            <h2 id="goals-heading">Goals &amp; Aspirations</h2>
+            <div class="row">
+                <div class="flex-1">
+                    <h3>Near-Term (0–6 months)</h3>
+                    <ul class="item-bullets">
+                        <li>Finish current WCTC modules with portfolio-ready lab submissions.</li>
+                        <li>Harden fundamentals: C# (classes/collections), Python (modules/testing), SQL
+                            (joins/aggregations).</li>
+                        <li>Ship two small, clean demos: <em>Tower Defense</em> (mechanics pass) and a focused web CRUD
+                            mini-app.</li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h3>Mid-Term (6–18 months)</h3>
+                    <ul class="item-bullets">
+                        <li>Internship or entry-level IT role focused on support + light automation.</li>
+                        <li>Strengthen Git/GitHub habits (issues, PRs, readable commits, changelogs).</li>
+                        <li>Advance <em>Lucent Forge</em> to a public prototype: stable loop, clear readme, short demo
+                            video.</li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <h3>Long-Term</h3>
+                    <ul class="item-bullets">
+                        <li>Transition into software/technical role blending IT reliability with game/simulation
+                            projects.</li>
+                        <li>Continue research on emergent NPC behavior and human-AI collaboration in design.</li>
+                        <li>Build a portfolio that shows consistent delivery and growth—not just spikes of effort.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="site-width">
+            &copy; <span id="year"></span> Shawn Dunn — All rights reserved.
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

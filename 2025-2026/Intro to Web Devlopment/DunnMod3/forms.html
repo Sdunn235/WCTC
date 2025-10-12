@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Forms in HTML</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-width">
+            <strong>Menu and Forms</strong>
+            <em>Module3</em>
+            <nav class="full">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/forms.html">Forms</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <main class="site-width">
+        <header>
+            <h1>Form Practice</h1>
+        </header>
+        <p>Below is the collection of three simple forms. These forms are hooked up to some JavaScript that powers the
+            functionality of the forms. These examples scratch the surface of what forms can do and serve as an
+            introduction to the very basic form layout, styling, and parts</p>
+        <p>Parts of the forms contain id and name attributes. "id" attributes are used to identify specific elements on
+            a page and there should only be one uniquely names id on a given page. For example, if we had an id of
+            "fname" we would only use that once on the page. The name attribute is often used for identifying elements
+            in a form. We will try to keep these names unique as well</p>
+        <form id="name-form">
+            <header>
+                <h3>Name Form</h3>
+            </header>
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="fname">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="lname">
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+        <form id="complaint-form">
+            <header>
+                <h3>Complaint Form</h3>
+            </header>
+
+            <label for="complaint-date">Date of Complaint</label>
+            <input type="date" id="complaint-date" name="cdate" required>
+
+            <label for="complaint-description">Complaint Description</label>
+            <textarea id="complaint-description" name="cdescription"></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+        <form id="food-form">
+            <header>
+                <h3>Favorite Meal</h3>
+            </header>
+
+            <label for="favorite-dish">Favorite Dish</label>
+            <input type="text" id="favorite-dish" name="fdish" required>
+
+            <label for="food-form">Choose a Category</label>
+            <select name="fcategory" id="food-catergory">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack-or-dessert">Snack/Dessert</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </main>
+    <footer>
+        <a href="mailto:sdunn15@my.wctc.edu" class="btn">&copy; Shawn Dunn | 2025</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="/js/forms.js"></script>
+</body>
+
+</html>

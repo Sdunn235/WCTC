@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.languageServer": "Pylance",
+		"github.copilot.enable": {
+			"plaintext": true,
+			"markdown": true,
+			"scminput": true,
+			"python": true,
+			"javascript": true
+		},
+		"editor.quickSuggestions": {
+			"comments": "inline",
+			"other": "inline",
+			"strings": "inline"
+		},
+		"editor.defaultFormatter": "GitHub.copilot",
+		"editor.inlineSuggest.suppressSuggestions": true,
+		"notebook.defaultFormatter": "GitHub.copilot"
+	}
+}

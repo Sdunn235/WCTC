@@ -1,0 +1,14 @@
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\bin\Debug\net10.0\DunnModule2Assignment.exe
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\bin\Debug\net10.0\DunnModule2Assignment.deps.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\bin\Debug\net10.0\DunnModule2Assignment.runtimeconfig.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\bin\Debug\net10.0\DunnModule2Assignment.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\bin\Debug\net10.0\DunnModule2Assignment.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.AssemblyInfoInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.AssemblyInfo.cs
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\refint\DunnModule2Assignment.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\DunnModule2Assignment.genruntimeconfig.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_2\DunnModule2Assignment\obj\Debug\net10.0\ref\DunnModule2Assignment.dll

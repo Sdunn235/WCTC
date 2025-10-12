@@ -1,0 +1,51 @@
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+.flex-3 {
+    flex: 3;
+}
+
+[class^="flex-"] > header {
+    color: var(--color-surface-dark);
+    margin-bottom: 5px;
+}
+[class^="flex-"] >a{  
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+[class^="flex-"] > a:visited{
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+@media (max-width: 768px)
+{
+    selection > .row{
+        margin: 0;
+    }
+    .row{
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .flex-2{
+        margin-left: 0;
+    }
+}
+
+.highlight {
+    background-color: var(--color-surface-dark-alt);
+    color: var(--color-text-inverse);
+    padding: 1rem;
+    padding-bottom: 25px;
+}

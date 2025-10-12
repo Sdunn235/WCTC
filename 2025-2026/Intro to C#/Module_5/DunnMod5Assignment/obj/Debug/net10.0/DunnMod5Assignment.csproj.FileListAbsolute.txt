@@ -1,0 +1,14 @@
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\bin\Debug\net10.0\DunnMod5Assignment.exe
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\bin\Debug\net10.0\DunnMod5Assignment.deps.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\bin\Debug\net10.0\DunnMod5Assignment.runtimeconfig.json
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\bin\Debug\net10.0\DunnMod5Assignment.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\bin\Debug\net10.0\DunnMod5Assignment.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.AssemblyInfoInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.AssemblyInfo.cs
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\refint\DunnMod5Assignment.dll
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.pdb
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\DunnMod5Assignment.genruntimeconfig.cache
+C:\Users\Shawn\Documents\School\WCTC\2025-2026\Intro to C#\Module_5\DunnMod5Assignment\obj\Debug\net10.0\ref\DunnMod5Assignment.dll

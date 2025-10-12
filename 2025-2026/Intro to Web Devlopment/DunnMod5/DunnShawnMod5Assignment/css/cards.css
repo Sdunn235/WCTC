@@ -1,0 +1,106 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--color-surface-card);
+    height: 350px;
+    overflow: hidden;
+
+}
+
+.card__info {
+    p {
+        font-size: 1rem;
+        padding-left: 5px;
+    }
+
+
+    header {
+        background-color: var(--color-surface-dark);
+        color: var(--color-text-inverse);
+        padding: 10px;
+        margin-bottom: 10px;
+
+
+    }
+}
+
+.card__info>header>h2 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 20px;
+    border-bottom: 2px solid var(--color-border-light);
+}
+
+.card__info>header>p {
+    font-size: 1rem;
+    margin-bottom: 3px;
+
+}
+
+.card__info>header>p:first {
+    margin-top: 3px;
+}
+
+.handler-card {
+    position: relative;
+    display: inline-block;
+    max-width: 420px;
+    width: 100%;
+    overflow: visible;
+}
+
+.handler-card .handler-img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.handler-card .monster-badge {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 150px;
+    height: auto;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 5;
+}
+
+
+
+.card.row {
+    gap: 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+    }
+
+    .card {
+        height: min-content;
+    }
+
+    .card>figure[class^="flex-"] {
+        flex: revert;
+        height: 550x;
+    }
+
+
+    .handler-card .monster-badge {
+        width: 175px;
+        right: 6px;
+        bottom: 6px;
+    }
+}
+
+.row {
+    padding: 0;
+}
