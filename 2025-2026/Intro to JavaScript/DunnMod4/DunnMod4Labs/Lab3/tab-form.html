@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and DOM Practice: Tab Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/recipe.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Tab Form</h1>
+                </header>
+                <section>
+                    <h3>Complete the Form</h3>
+                    <p>
+                        Add the class of active to the li that says "Add" and add a class of hidden to div.recipes-view in this HTML file.
+                    </p>
+                    <p>Go to the tab-data.js file and complete "Part One" and "Part Two"</p>
+                </section>
+
+                <section>
+                    <div class="recipes">
+                        <ul class="tabs">
+                            <!-- data attributes store values in the html -->
+                            <li data-tab="view" class="active">View</li>
+                            <li data-tab="add">Add</li>
+                        </ul>
+                        <div class="recipes-add hidden">
+                            <form id="add-recipe-form">
+                                <h3>Recipe</h3>
+                                <label for="recipe-form-name">Name</label>
+                                <input type="text" name="recipe-name" id="recipe-form-name" required>
+                                <label for="recipe-form-description">Description</label>
+                                <textarea name="recipe-description" id="recipe-form-description" required></textarea>
+                                <input type="submit" value="Add Recipe">
+                            </form>
+                        </div>
+                        <div class="recipes-view ">
+                            <div class="recipes-list">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/tab-form.js"></script>
+</body>
+
+</html>

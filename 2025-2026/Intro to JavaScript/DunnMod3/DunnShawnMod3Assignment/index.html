@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Filter</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+
+                <ul class="items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a
+                            href="https://www.google.com/search?q=diet+and+exercise&oq=diet+and+ex&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyBggBEEUYOTIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTU1MDhqMGoxNagCCLACAfEFLef9WjbjKKE&sourceid=chrome&ie=UTF-8">
+                            Diet and Exercise</a></li>
+                    <li><a
+                            href="https://www.google.com/search?q=calorie+calculator&sca_esv=0b1aadbb54d51ce1&sxsrf=AE3TifOw2oXAS0G0bl4X35kB2BX9317Org%3A1763981761077&ei=wTkkafi8BMS0qtsPxZGUgQI&oq=calorie+cal&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2NhbG9yaWUgY2FsKgIIADIOEAAYgAQYkQIYsQMYigUyChAAGIAEGEMYigUyCxAAGIAEGJECGIoFMgUQABiABDIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3QlD9GVjrNnACeAGQAQCYAc4BoAH0C6oBBTEuOS4xuAEByAEA-AEBmAINoALSD8ICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgINECMY8AUYgAQYJxiKBcICBBAjGCfCAg0QABiABBixAxhDGIoFwgILEC4YgAQYsQMYgwHCAgsQLhiABBjRAxjHAcICExAuGIAEGLEDGNEDGEMYxwEYigXCAg4QLhiABBjHARiOBRivAcICERAuGIAEGLEDGNEDGIMBGMcBwgIKECMYgAQYJxiKBcICChAuGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgIKEAAYgAQYFBiHApgDAIgGAZAGCpIHBjEuMTEuMaAHglyyBwYwLjEwLjG4B4kOwgcJMy04LjMuMS4xyAeQAw&sclient=gws-wiz-serp">
+                            Calorie Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+
+
+
+        <!-- Restaurant Filter -->
+        <div class="wrapper">
+            <h1>
+                Restaurant Choices
+            </h1>
+        </div>
+        <div class="restaurant">
+            <div class="restaurant-sidebar">
+                <div class="restaurant-info">
+                    <span class="restaurant-header">Sorting Options</span>
+                    <span class="restaurant-category">Every Likes Options and Choices</span>
+                    <p>
+                        Everyone likes variety. Below are some options to make sure your dining needs are met!
+                    </p>
+                    <label for="restaurant-name">Restaurant Name</label>
+                    <select id="restaurant-name" onchange="filteringLoop()">
+                        <option value="All">Any Restaurant</option>
+                        <option value="Andisova">Andisova</option>
+                        <option value="Grill Moguls">Grill Moguls</option>
+                        <option value="Lavoya Diner">Lavoya Diner</option>
+                        <option value="Macho Meals">Macho Meals</option>
+                        <option value="NovaFood">NovaFood</option>
+                        <option value="Root Shoots">Root Shoots</option>
+                        <option value="Salad Heaven">Salad Heaven</option>
+                        <option value="Sangli">Sangli</option>
+                        <option value="Sherryl Meals">Sherryl Meals</option>
+                        <option value="Veganic Corner">Veganic Corner</option>
+                    </select>
+
+                    <div class="filter-group">
+                        <div class="radio-group">
+                            <h4>Do you want gluten free?</h4>
+                            <label for="restaurant-isGluten-no">Is NOT Gluten Free</label>
+                            <input type="radio" name="restaurant-isGluten" id="restaurant-isGluten-no" value="No" checked 
+                                onchange="filteringLoop()">
+                            <label for="restaurant-isGluten-yes">Is Gluten Free</label>
+                            <input type="radio" name="restaurant-isGluten" id="restaurant-isGluten-yes" value="Yes"
+                                onchange="filteringLoop()">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <div class="radio-group">
+                            <h4>Do you want Vegan Options?</h4>
+                            <label for="restaurant-isVegan-no">Is NOT Vegan</label>
+                            <input type="radio" name="restaurant-isVegan" id="restaurant-isVegan-no" value="No" checked
+                                onchange="filteringLoop()">
+                            <label for="restaurant-isVegan-yes">Is Vegan</label>
+                            <input type="radio" name="restaurant-isVegan" id="restaurant-isVegan-yes" value="Yes"
+                                onchange="filteringLoop()">
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <div class="radio-group">
+                            <h4>Local Only?</h4>
+                            <label for="restaurant-isLocal-no">Is NOT Local</label>
+                            <input type="radio" name="restaurant-isLocal" id="restaurant-isLocal-no" value="No" checked
+                                onchange="filteringLoop()">
+                            <label for="restaurant-isLocal-yes">Is Local</label>
+                            <input type="radio" name="restaurant-isLocal" id="restaurant-isLocal-yes" value="Yes"
+                                onchange="filteringLoop()">
+                        </div>
+                    </div>
+                    <label for="restaurant-rating">Rating: </label>
+                    <select id="restaurant-rating" onchange="filteringLoop()">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                    </select>
+                </div>
+
+
+
+                <!-- Adding New Restaurant -->
+                <div class="restaurant-info add-restaurant-section">
+                    <span class="restaurant-header">Add New Restaurant</span>
+                    <span class="restaurant-category">Share a new dining experience</span>
+                    <p>Help others discover great restaurants by adding your favorite places!</p>
+
+                    <form id="add-restaurant-form">
+                        <label for="new-restaurant-name">Restaurant Name *</label>
+                        <input type="text" id="new-restaurant-name" required>
+
+                        <label for="new-restaurant-address">Address *</label>
+                        <input type="text" id="new-restaurant-address" required>
+
+                        <label for="new-restaurant-image">Image URL (optional)</label>
+                        <input type="url" id="new-restaurant-image" placeholder="https://example.com/image.jpg">
+
+                    <div class="filter-group">
+                        <div class="radio-group">
+                            <h4>Is it gluten free?</h4>
+                            <label for="new-isGluten-no">Is NOT Gluten Free</label>
+                            <input type="radio" name="new-restaurant-isGluten" id="new-restaurant-isGluten-no" value="No" checked>
+                            <label for="new-isGluten-yes">Is Gluten Free</label>
+                            <input type="radio" name="new-restaurant-isGluten" id="new-restaurant-isGluten-yes" value="Yes">
+                        </div>
+                    </div>
+
+                        <div class="filter-group">
+                            <div class="radio-group">
+                                <h4>Is it Vegan?</h4>
+                                <label for="new-restaurant-vegan-no">Is NOT Vegan</label>
+                                <input type="radio" name="new-restaurant-vegan" id="new-restaurant-vegan-no" value="No" checked>
+                                <label for="new-restaurant-vegan-yes">Is Vegan</label>
+                                <input type="radio" name="new-restaurant-vegan" id="new-restaurant-vegan-yes" value="Yes">
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <div class="radio-group">
+                                <h4>Is it Local?</h4>
+                                <label for="new-restaurant-local-no">Is NOT Local</label>
+                                <input type="radio" name="new-restaurant-local" id="new-restaurant-local-no" value="No" checked>
+                                <label for="new-restaurant-local-yes">Is Local</label>
+                                <input type="radio" name="new-restaurant-local" id="new-restaurant-local-yes" value="Yes">
+                            </div>
+                        </div>
+
+                        <label for="new-restaurant-rating">Rating (1-5)</label>
+                        <select id="new-restaurant-rating" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5" selected>5</option>
+                        </select>
+
+                        <label for="new-restaurant-review">Review *</label>
+                        <input type="text" id="new-restaurant-review" placeholder="Share your experience at this restaurant..." required>
+
+                        <button type="submit" id="add-restaurant-btn">Add Restaurant</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- DEMO IMAGE URL https://resizer.otstatic.com/v3/photos/69503632-2?width=752&height=752&webp=true -->
+
+
+            <!-- Restaurant Results -->
+            <div class="restaurant-result">
+                <div id="sorting-result">
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <footer>
+        <div class="wrapper">
+            <div class="logo">
+                <span class="logo-line-one">Shawn Dunn</span>
+                <span class="logo-line-two">Mod 3 Assignment</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

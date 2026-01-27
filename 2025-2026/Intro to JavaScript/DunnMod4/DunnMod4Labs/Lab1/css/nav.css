@@ -1,0 +1,122 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+
+
+main > aside {
+    position: fixed;
+    max-width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--color-dark);
+}
+
+main > aside > nav {
+    width: inherit;
+}
+
+main > aside > nav li > a:has(+ul)::before, main > aside > nav li > a:has(+ul)::after {
+    margin-top: -10px;
+    font-family: bootstrap-icons;
+    position: absolute;
+    left: 10px;
+    top: calc(50% + 1px);
+}
+
+main > aside > nav li > a:has(+ul)::before {
+    content: "\F234";
+    transition: transform var(--transition-time-default) ease-in-out;
+}
+
+main > aside > nav li.closed > a:has(+ul)::before {
+    transform: rotate(0deg);
+}
+
+main > aside > nav li.open > a:has(+ul)::before {
+    transform: rotate(90deg);
+}
+
+main > aside > nav li > a:has(+ul)::after {
+    transition: opacity var(--transition-time-default) ease-in-out,
+        transform var(--transition-time-default) ease-in-out;
+    content: "\F231";
+}
+
+main > aside > nav li.closed > a:has(+ul)::after {
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+main > aside > nav li.open > a:has(+ul)::after {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+main > aside > nav li > a {
+    border-left: 10px solid transparent;
+    position: relative;
+    color: var(--color-light);
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    padding-left: 35px;
+    transition: background-color var(--transition-time-default) ease-in-out,
+        color .2s ease-in-out;
+}
+
+main > aside > nav li > a:hover, main > aside > nav li > a.active {
+    color: var(--color-dark);
+    background-color: var(--color-link);   
+}
+
+main > aside > nav li ul {
+    height: 0;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+}
+main > aside > nav li.open > a {
+    font-weight: bold;
+    border-color: var(--color-link);
+    transition: all var(--transition-time-default) ease-in-out;
+}
+
+main > aside > nav li.open > a, main > aside > nav li ul > li {
+    border-left: 10px solid var(--color-link);
+}
+
+main > aside > nav .info {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+main > aside > nav .info__name {
+    color:var(--color-light);
+    opacity: .5;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+main > aside > nav h2 {
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-light);
+    border-bottom: 1px solid var(--color-light);
+    padding: 20px 0;
+    margin: 0 20px 20px 20px;
+}
+
+main > aside > nav .info__next-lab>a {
+    color:var(--color-light);
+    opacity: .5;
+    display: block;
+    font-weight: bold;
+}
+
+main > aside > nav .info__next-lab>a:hover {
+    background-color: transparent;
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events: Adding Events</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Adding Events</h1>
+                </header>
+                <section>
+                    <h3>HTML Event Handler Attribute</h3>
+                    <div class="row center">
+                        <div class="flex-3">
+                            <p>This is what we have been using but is generally considered bad practice as it is not modular solution; the JavaScript code is tied into the HTML.</p>
+                            <p>Link the button to the function "htmlAttrEvent()" using an on click HTML Attribute</p>
+                            <p><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">HTML Event Attributes</a></p>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full" onclick="htmlAttrEvent()">HTML Attribute</button>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>Traditional DOM Event Handler</h3>
+                    <div class="row center">
+                        <div class="flex-3">
+                            <p>All modern browser understand this way of creating an event handler, but you can only attach one function to each event handler.</p>
+                            <p>Link the button to the function "domEvent()" using a traditional DOM Event Handler in the adding-events.js file.</p>
+                            <p><a href="https://www.w3schools.com/jsref/event_onclick.asp" target="_blank">DOM Event Handler: Look at "In JavaScript"</a></p>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full" id="dom-handler-test">DOM Handler</button>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>Event Listener</h3>
+                    <div class="row center">
+                        <div class="flex-3">
+                            <p>Event listeners are generally considered the best way to handle events. Event listeners can handle multiple functions at one time and are the most recent of the three methodologies. This is the preferred way going forward.</p>
+                            <p>Link the button to an anonymous function that alerts "Event Listener"</p>
+                            <p><a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp" target="_blank">Event Listener</a></p>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full" id="event-listener-test">Event Listener</button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/events/adding-events.js"></script>
+</body>
+
+</html>

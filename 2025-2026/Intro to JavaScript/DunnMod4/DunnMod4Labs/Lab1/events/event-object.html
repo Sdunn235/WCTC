@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events: Event Object</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>The Event Object</h1>
+                </header>
+                <section>
+                    <h3>The Event Object</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>When an event occurs, the event object gives information about the event that occurred. When a function is called for an event (named or anonymous), the first parameter of the function is the event object. This event object does not need to be added to the parameters, but will be the first parameter that gets added. The parameter can have any name, but it is typically called "e". </p>
+                            <p><a href="https://www.w3schools.com/jsref/obj_event.asp" target="_blank">w3s: Event Object</a></p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>Event Object Members</h3>
+                    <div class="row center">
+                        <div class="flex-3">
+                            <p></p>
+                            <p>Look at the linked function to the associated button. Make note of the parameter. Use the parameter to alert the event's target, the event's type, and the time the event took place.</p>
+                            <p><a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">HTML Event Attributes</a></p>
+                        </div>
+                        <div class="flex-1">
+                            <button class="w-full" id="event-object-test">Event Object</button>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>Event Object - Target</h3>
+                    <div class="row center">
+                        <div class="flex-3">
+                            <p></p>
+                            <p>The target property gives informs us which element triggered the event. This has many use cases, including saving the number of event listeners needed.</p>
+                            <p>The buttons below are inside of a div#click-me. Add an event listener to div#click-me that alerts the id of the clicked button. If no button is selected, alert nothing.</p>
+                            <p><a href="https://www.w3schools.com/jsref/event_target.asp" target="_blank">w3s: target property</a></p>
+                            <p><a href="https://www.w3schools.com/jsref/prop_node_nodename.asp" target="_blank">w3s: nodeName property</a></p>
+                            <p><a href="https://www.w3schools.com/jsref/jsref_tolowercase.asp" target="_blank">w3s: toLowerCase() method</a></p>
+                            <p><a href="https://www.w3schools.com/jsref/prop_html_id.asp" target="_blank">w3s: id property</a></p>
+                        </div>
+                    </div>
+                    <div class="row center" id="click-me">
+                        <button id="button-one">Button One</button>
+                        <button id="button-two">Button Two</button>
+                        <button id="button-three">Button Three</button>
+                    </div>
+                </section>
+                
+                <section>
+                    <h3>Event Object - Prevent Default</h3>
+                    <div class="row center">
+                        <div class="flex-3">
+                            <p></p>
+                            <p>The event object can be used to prevent the default functionality of an event. This is common with form submissions</p>
+                            <p>Use the event object to prevent the default functionality of the form below. Add an event listener for the 'submit' event of the form#email-form. Make sure to include the event object as a parameter.</p>
+                            <p><a href="https://www.w3schools.com/jsref/event_preventdefault.asp" target="_blank">w3s: preventDefault() method</a></p>
+                        </div>
+                    </div>
+                    <div class="row center" id="click-me">
+                        <form id="email-form">
+                            <label for="user-email">Email</label>
+                            <input type="email" id="user-email">
+                            
+                            <input type="submit" value="Add Email">
+                        </form>
+                    </div>
+                </section>
+        
+            </article>
+        </div>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/events/event-object.js"></script>
+</body>
+
+</html>

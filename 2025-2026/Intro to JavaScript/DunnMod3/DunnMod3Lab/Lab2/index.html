@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 3 Lab 2</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="site-width">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="for.html">For Loops</a></li>
+                <li><a href="while.html">While Loops</a></li>
+                <li><a href="dowhile.html">Do While Loops</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="site-width">
+            <header>
+                <h1>
+                    Looping
+                </h1>
+            </header>
+
+            <div class="row">
+                <section class="flex-1">
+                    <h2>For Loop</h2>
+                    <p>
+                        A for loop is a pre-test loop. The loop first tests a condition and then executes a code block if the condition is true. 
+                    </p>
+                    <p>
+                        A for loop has three parts: initialization statement, test expression, and update statement.
+                    </p>
+                    <h3>Initialization Statement</h3>
+                    <p>
+                        The initialization statement sets up a variable to use as a count of the current iteration of the loop. This variable is commonly called i.
+                    </p>
+                    <pre>
+let i = 0;</pre>
+                    <h3>Test Expression</h3>
+                    <p>
+                        The test expression tests a condition. If the condition is true, the code block of the loop is run. 
+                    </p>
+                    <pre>
+i &#60; 5;</pre>
+                    <h3>Update Statement</h3>
+                    <p>
+                        The update statement runs after the loop has completed. The loop then returns to the test expression. The update statement is often used to increment the counter value. 
+                    </p>
+                    <pre>
+i++;</pre>
+                    <h3>Example</h3>
+                    <h4>For loop</h4>
+                    <pre>
+for(let i = 0; i &#60; 5; i++)
+{
+    console.log(i);
+}</pre>
+                    <h4>Output</h4>
+                    <pre>
+0
+1
+2
+3
+4</pre>
+                </section>
+                <section class="flex-1">
+                    <h2>While Loop</h2>
+                    <p>
+                        A while loop is a pre-test loop. The loop first tests a condition and then executes a code block if the condition is true. 
+                    </p>
+                    <p>
+                        A while loop is a simplified for loop. It will continue to run so long as the test condition is true. 
+                    </p>
+                    <h3>Example 1</h3>
+                    <h4>While loop</h4>
+                    <pre>
+let i = 0;
+while(i &#60; 5)
+{
+    console.log(i);
+    i++;
+}</pre>
+                    <h4>Output</h4>
+                    <pre>
+0
+1
+2
+3
+4</pre>
+                    <h3>Example 2</h3>
+                    <h4>While loop</h4>
+                    <pre>
+let i = 0;
+while(i &#60; 0)
+{
+    console.log(i);
+    i++;
+}</pre>
+    <h4>Output</h4>
+    <pre>
+        &nbsp;</pre>
+                </section>
+                <section class="flex-1">
+                    <h2>Do-While Loop</h2>
+                    <p>
+                        A do-while loop is a post-test loop. The loop first executes a code block and then tests a condition. If the condition is true, it will run the block of code again and test a condition again after the code block is run. 
+                    </p>
+                    <h3>Example 1</h3>
+                    <h4>Do-while loop</h4>
+                    <pre>let i = 0;
+do
+{
+    console.log(i);
+    i++;
+}while(i < 5)</pre>
+                    <h4>Output</h4>
+                    <pre>
+0
+1
+2
+3
+4</pre>
+                
+                    <h3>Example 2</h3>
+                    <h4>Do-while loop</h4>
+                    <pre>let i = 0;
+do
+{
+    console.log(i);
+    i++;
+}while(i < 0)</pre>
+    <h4>Output</h4>
+    <pre>
+0</pre>
+                </section>
+            </div>
+        </article>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

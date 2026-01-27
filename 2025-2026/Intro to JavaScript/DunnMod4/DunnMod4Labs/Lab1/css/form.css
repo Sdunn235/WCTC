@@ -1,0 +1,26 @@
+form {
+    max-width: 300px;
+}
+
+form label {
+    font-size: .8em;
+}
+
+form input {
+    padding: 5px;
+    font-size: 1.1em;
+    width: 100%;
+    margin-bottom: 1em;
+    color: var(--color-dark);
+    outline-color: var(--color-link);
+    cursor: pointer;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    max-width: 100%;
+}
+
+form input[readonly] {
+    background-color: transparent;
+}

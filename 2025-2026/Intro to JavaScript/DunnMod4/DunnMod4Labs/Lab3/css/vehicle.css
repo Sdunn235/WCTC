@@ -1,0 +1,32 @@
+
+.vehicles {
+    background-color: white;
+
+}
+
+.vehicle-add, .vehicle-list {
+    padding: 2em;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.vehicle-form>form {
+    max-width: 100%;;
+}
+
+.vehicles .hidden {
+    display: none;
+}
+
+.vehicle-list {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.vehicle-list .car, .vehicle-list .plane, .vehicle-list .boat {
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+} 
+

@@ -1,0 +1,136 @@
+:root {
+    --color-dark: #080708;
+    --calor-light: #B8D5B8; 
+    --color-main: #586969;
+    --color-link: #93032E;
+}
+
+body {
+    background-color: var(--calor-light);
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--color-main);
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    padding: .25rem;
+    background-color: var(--color-main);
+    color: #fff;
+}
+
+/* ===== Card 1: Form ===== */
+#student-card {
+    max-width: 225px;
+    margin: 20px auto;
+    background-color: #FFF;
+    padding: 0 2rem 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#student-card h2 {
+    margin: 0 -2rem 1rem;
+    border-radius: 12px 12px 0 0;
+}
+
+#student-card form input {
+    display: block;
+    width: 100%;
+    padding: 6px 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#student-card form .btn-primary {
+    background-color: var(--color-link);
+    border: 2px solid var(--color-link);
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0 auto; 
+    display: block;
+    width: 120px;
+    cursor: pointer;
+ 
+    transition: transform .05s ease, filter .15s ease, box-shadow .05s ease;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
+#student-card form .btn-primary:hover {
+    opacity: 0.9;
+}
+
+#student-card form .btn-primary:active {
+    transform: translateY(3px); 
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
+}
+
+/* ===== Card 2: Enrolled Students ===== */
+#student-card2 {
+    max-width: 225px;
+    margin: 20px auto;
+    background-color: #FFF;
+    padding: 0 2rem 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.3), 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#student-card2 h2 {
+    margin: 0 -2rem 1rem;
+    border-radius: 12px 12px 0 0;
+}
+
+#student-card2 #students .student {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: .75rem;
+    margin: .5rem 0;
+    text-align: center;
+    transition: color .15s ease, transform .05s ease, box-shadow .05s ease;
+}
+
+#student-card2 #students .student:hover {
+    cursor: pointer;
+    color: blue
+}
+
+#student-card2 #students .student .delete-btn {
+    background-color: white;
+    border: 2px solid var(--color-link);
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 1rem auto;
+    display: block;
+    width: 80px;
+    cursor: pointer;
+ 
+    transition: transform .05s ease, filter .15s ease, box-shadow .05s ease;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
+#student-card2 #students .student .delete-btn:hover {
+    opacity: 1.2;
+    background-color: #d64976; 
+}
+
+#student-card2 #students .student .delete-btn:active {
+    transform: translateY(3px);               /* pressed look */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
+}

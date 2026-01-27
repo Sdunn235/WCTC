@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic jQuery</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Basic jQuery</h1>
+                </header>
+
+                <section>
+                    <p>Use the jQuery function with CSS selectors as the argument (string) in order to select elements as a jQuery object. Try some basic selections. Remember that for jQuery to work on a page, two things need to be included: a link to the jQuery library (CDN script) and the document ready function.
+
+                    </p>
+                </section>
+
+                <section>
+                    <h3>id Selection</h3>
+                    <p>jQuery uses CSS selectors. The octothorpe (number sign / pound sign / hash tag) is used for selecting ids.</p>
+                    <p><em>Using jQuery, select the div#id-two and log it to the console window.</em></p>
+                    <div class="row">
+                        <div id="id-one" class="flex-1 element-example ">
+                            #id-one
+                        </div>
+                        <div id="id-two" class="flex-1 element-example ">
+                            #id-two
+                        </div>
+                        <div id="id-three" class="flex-1 element-example ">
+                            #id-three
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section>
+                    <h3>class Selection</h3>
+                    <p>jQuery uses CSS selectors. The period is used for selecting classes.</p>
+                    <p><em>Using jQuery, select the all div.practice-class and log it to the console window.</em></p>
+                    <div class="row">
+                        <div class="flex-1 element-example different-class">
+                            .different-class
+                        </div>
+                        <div class="flex-1 element-example practice-class">
+                            .practice-class
+                        </div>
+                        <div class="flex-1 element-example other-class">
+                            .other-class
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-1 element-example practice-class">
+                            .practice-class
+                        </div>
+                        <div class="flex-1 element-example other-class">
+                            .other-class
+                        </div>
+                        <div class="flex-1 element-example practice-class">
+                            .practice-class
+                        </div>
+                    </div>
+                </section>
+
+
+                
+                <section>
+                    <h3>first-of-type selection</h3>
+                    <p>Often the first element in a series will need to be selected. Sometimes this is styled differently or has different information. It is important to be able to use jQuery to dynamically select the first element in a series.</p>
+                    <p><em>Using only one jQuery function and without updating the divs in the HTML, select the first div.practice-class-two. Log the results.</em></p>
+                    <div class="row">
+                        <div class="flex-1 element-example practice-class-two">
+                            .practice-class-two <em>Select This</em>
+                        </div>
+                        <div class="flex-1 element-example practice-class-two">
+                            .practice-class-two
+                        </div>
+                        <div class="flex-1 element-example practice-class-two">
+                            .practice-class-two
+                        </div>
+                    </div>
+                </section>
+
+                
+                
+                <section>
+                    <h3>last-of-type Selection</h3>
+                    <p>Similar to the first element being slightly different, the last element may have different styling or information as well.</p>
+                    <p><em>Using only one jQuery function and without updating the divs in the HTML, select the last div.practice-class-three. Log the results.</em></p>
+                    <div class="row">
+                        <div class="flex-1 element-example practice-class-three">
+                            .practice-class-three 
+                        </div>
+                        <div class="flex-1 element-example practice-class-three">
+                            .practice-class-three
+                        </div>
+                        <div class="flex-1 element-example practice-class-three">
+                            .practice-class-three <em>Select This</em>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>not Selection</h3>
+                    <p>Functionality may need to be applied to specific elements that do not meet certain requirements.</p>
+                    <p><em>Using only one jQuery function and without updating the divs in the HTML, select both div.practice-class-four that do not have the class of active. Log the results.</em></p>
+                    <div class="row">
+                        <div class="flex-1 element-example practice-class-four active">
+                            .practice-class-four.active 
+                        </div>
+                        <div class="flex-1 element-example practice-class-four">
+                            .practice-class-four
+                        </div>
+                        <div class="flex-1 element-example practice-class-four">
+                            .practice-class-four
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>has Selection</h3>
+                    <p>Sometimes it is valuable to make selections based on which elements have something inside of them. You can use the has pseudo selector for this.</p>
+                    <p><em>Using only one jQuery function and without updating the divs in the HTML, select all three div.practice-class-five that have an em element inside of them. Log the results.</em></p>
+                    <div class="row">
+                        <div class="flex-1 element-example practice-class-five active">
+                            .practice-class-five.active 
+                        </div>
+                        <div class="flex-1 element-example practice-class-five">
+                            .practice-class-five <em>This One</em>
+                        </div>
+                        <div class="flex-1 element-example practice-class-five inactive">
+                            .practice-class-five.inactive <em>This One</em>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-1 element-example practice-class-five">
+                            .practice-class-five
+                        </div>
+                        <div class="flex-1 element-example practice-class-five active">
+                            .practice-class-five.active <em>This One</em>
+                        </div>
+                        <div class="flex-1 element-example practice-class-five">
+                            .practice-class-five 
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </article>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/basic-jquery.js"></script>
+</body>
+
+</html>

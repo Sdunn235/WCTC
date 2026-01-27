@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Practice</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Custom font via Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="logo">
+                    <span class="logo-line-one">FirstName LastName</span>
+                    <span class="logo-line-two">Mod 3 Lab 3</span>
+                </div>
+                <ul class="items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="looping-practice.html" class="active">Looping Practice</a></li>
+                    <li><a href="objects.html">Looping Objects</a></li>
+                    <li><a href="future.html">Future Concepts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper">
+            <h1>
+                Looping Practice
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div>
+                <p>
+                    Make sure to use the debugger; keyword. This will pause the program in the browser (as long as you
+                    have the console window up in the browser) and you can look at the current values in the console
+                    window.
+                </p>
+                <p>
+                    Use the "Step Over" button in the console to go statement by statement through your code.
+                </p>
+                <p>
+                    Check your data types.
+                </p>
+                <p>
+                    Check your values.
+                </p>
+                <br>
+                <br>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem One</span>
+                    <span class="problem-category">Reviewing a loop with an input</span>
+                    <p>
+                        This should be review from the previous lab/lecture. Select the input and get the value, select
+                        the output element, and loop from 0 up to the input value, appending the values to the selected
+                        output element. This input has a default value and is readonly for convenience.
+                    </p>
+                    <input type="number" id="one-input" value="20" readonly>
+                    <input type="button" value="Run Test One" id="one-test">
+                </div>
+                <div class="problem-result">
+                    <p id="one-result">
+
+                    </p>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Two</span>
+                    <span class="problem-category">You Do It</span>
+                    <p>
+                        Do everything in problem one, but by yourself. Create an number input, button input, and a
+                        function for the event. You can use an onclick in the HTML or an event listener.
+                    </p>
+                    <input type="number" id="two-input" value="15" readonly>
+                    <input type="button" value="Run Test Two" id="two-test">
+
+                </div>
+                <div class="problem-result">
+                    <p id="two-result">
+                    </p>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Three</span>
+                    <span class="problem-category">One more input</span>
+                    <p>
+                        Create two number inputs. Upon changing one of the inputs, the output element should clear and
+                        then decrement down from the first number input to the second number input.
+                    </p>
+                    <input type="number" id="three-top" value="100" readonly>
+                    <input type="number" id="three-lower" value="10" readonly>
+                    <input type="number" id="three-d" value="10" readonly>
+                    <input type="button" value="Run Test Three" id="three-test">
+                </div>
+                <div class="problem-result">
+                    <p id="three-result">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/looping-practice.js"></script>
+
+</body>
+
+</html>

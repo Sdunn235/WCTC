@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="site-width">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="for.html" class="active">For Loops</a></li>
+                <li><a href="while.html">While Loops</a></li>
+                <li><a href="dowhile.html">Do While Loops</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="site-width">
+            <header>
+                <h1>
+                    For Loops
+                </h1>
+            </header>
+            <section class="lab-problem">
+                <header>
+                    <h3>For loop with a counter and hardcoded test expression</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            This is and example of a for loop. The for loop has three parts,
+                            an initialization statement, a test expression, and an update statement.
+                            The counter starts a 0 and runs 10 times from 0 to 9.
+                        </p>
+                    </div>
+                    <div class="result flex-2">
+                        <p id="for-one-result"></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="lab-problem">
+                <header>
+                    <h3>For loop with a counter and value in the test expression</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            In this for loop, an input is used to get a value. The value is used
+                            in the test expression to determine how many times the loop has been ran.
+                        </p>
+                        <label for="for-two">Test Expression Value</label>
+                        <input type="number" id="for-two">
+                        <input type="button" value="Run the Loop" onclick="forTwo()">
+                    </div>
+                    <div class="result flex-2">
+                        <p id="for-two-result"></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="lab-problem">
+                <header>
+                    <h3>For loop with a two values in the test expression</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            In this for loop, two inputs are used. One is for the bottom limit test value
+                            and the other is used for the top limit test value.
+                        </p>
+                        <label for="for-three-base">Test Base Value</label>
+                        <input type="number" id="for-three-base">
+                        <label for="for-three-top">Test Top Value</label>
+                        <input type="number" id="for-three-top">
+                        <input type="button" value="Run the Loop" onclick="forThree()">
+                    </div>
+                    <div class="result flex-2">
+                        <p id="for-three-result"></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="lab-problem">
+                <header>
+                    <h3>For loop with a variable for the incrementor</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            This loop has three inputs: one for the base value, one for the top value, and
+                            one for the update statement (incrementor).
+                        </p>
+                        <label for="for-four-base">Test Base Value</label>
+                        <input type="number" id="for-four-base">
+                        <label for="for-four-top">Test Top Value</label>
+                        <input type="number" id="for-four-top">
+                        <label for="for-four-i">Incrementor Value</label>
+                        <input type="number" id="for-four-i">
+                        <input type="button" value="Run the Loop" onclick="forFour()">
+                    </div>
+                    <div class="result flex-2">
+                        <p id="for-four-result"></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="lab-problem">
+                <header>
+                    <h3>Looping through an array</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            For loops can be used to iterate through arrays. In this example, the loop goes through
+                            an array of people objects and outputs their name and age.
+                        </p>
+                        <input type="button" value="Run the Loop" onclick="forFive()">
+                    </div>
+                    <div class="result flex-2">
+                        <div id="for-five-result"></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="lab-problem">
+                <header>
+                    <h3>Looping through an array with a condition</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            A for loop in conjunction with a conditional can be used to display specific information.
+                            For example, using a number input,
+                            you can find people who are above a certain age.
+                        </p>
+                        <label for="for-six-age">Base Age</label>
+                        <input type="number" id="for-six-age">
+                        <input type="button" value="Run the Loop" onclick="forSix()">
+                    </div>
+                    <div class="result flex-2">
+                        <div id="for-six-result"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/for.js"></script>
+</body>
+
+</html>

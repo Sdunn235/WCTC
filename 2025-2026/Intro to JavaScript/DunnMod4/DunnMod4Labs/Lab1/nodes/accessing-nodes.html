@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes: Accessing Nodes</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Accessing Nodes</h1>
+                </header>
+
+                <section>
+                    <h3>Nodes</h3>
+                    <p>A node is an abstraction of objects like Document and Element. For our purposes, we will often use Element and Node interchangeably. An Element Object is a type of Node.</p>
+                    <p>There are several different ways to access nodes. Here are three ways to do it, but there are more than this.</p>
+                    <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">Mozilla: Nodes</a></p>
+                    <p><a href="https://www.w3schools.com/js/js_htmldom_nodes.asp">w3s: Nodes</a></p>
+                </section>
+
+                <section>
+                    <h3>getElementById('id')</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>getElementById() is a method that returns a HTMLElementObject of the first element that matches the argument for id.</p>
+                            <p>Log the div#select-me to the console window.</p>
+                            <p><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp" target="_blank">w3s: getElementById()</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div id="dont-select-one" class="flex-1 element-example">
+                            #dont-select-one
+                        </div>
+                        <div id="dont-select-two" class="flex-1 element-example">
+                            #dont-select-two
+                        </div>
+                        <div id="select-me" class="flex-1 element-example">
+                            #select-me
+                        </div>
+                        <div id="dont-select-three" class="flex-1 element-example">
+                            #dont-select-three
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>querySelector('cssSelector')</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>querySelector() returns an Element Object for the first matching element based on the CSS selector argument. Note that CSS selectors are what are used in the CSS file. Ids are prefixed with # and classes are prefixed with .</p>
+                            <p>Log the div.log-me to the console window. Note which Element Object is returned.</p>
+                            <p><a href="https://www.w3schools.com/jsref/met_document_queryselector.asp" target="_blank">w3s: querySelector()</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="flex-1 element-example log-me">
+                            .log-me
+                        </div>
+                        <div class="flex-1 element-example log-me">
+                            .log-me
+                        </div>
+                        <div class="flex-1 element-example log-me">
+                            .log-me
+                        </div>
+                        <div class="flex-1 element-example log-me">
+                            .log-me
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>querySelectorAll('cssSelector')</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>querySelectorAll() returns a static/non-live NodeList Object for the all matching elements based on the CSS selector argument. Static or non-live means that if additional elements are added that match the selector after the method has been called, the NodeList will not include those new elements.</p>
+                            <p>Log the div.log-me-again to the console window. Note the type of object returned.</p>
+                            <p><a href="https://www.w3schools.com/jsref/met_document_queryselectorall.asp" target="_blank">w3s: querySelectorAll()</a></p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="flex-1 element-example log-me-again">
+                            .log-me-again
+                        </div>
+                        <div class="flex-1 element-example log-me-again">
+                            .log-me-again
+                        </div>
+                        <div class="flex-1 element-example log-me-again">
+                            .log-me-again
+                        </div>
+                        <div class="flex-1 element-example log-me-again">
+                            .log-me-again
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/nodes/accessing-nodes.js"></script>
+</body>
+
+</html>

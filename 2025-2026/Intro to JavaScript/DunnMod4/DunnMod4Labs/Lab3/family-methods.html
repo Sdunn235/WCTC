@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and DOM Practice: Family Methods</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/family.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Extra: Family Methods</h1>
+                </header>
+                <section>
+                    <h3>Traversing the DOM</h3>
+                    <p>
+                        Completion of this lab is not required and is extra credit. Using either JavaScript or jQuery, make it so clicking a button moves the class of active from the current element to the appropriate element based on the button selection.
+                    </p>
+                    <p>If you try to access an element that does not exist, the program may error. Validation for this is not required for credit.</p>
+                    <div class="row">
+                        <div class="flex-1">
+                            <h4>
+                                JavaScript Properties needed
+                            </h4>
+                            <ul>
+                                <li><a href="https://www.w3schools.com/jsref/prop_node_parentelement.asp">Parent</a></li>
+                                <li><a href="https://www.w3schools.com/jsref/prop_node_firstchild.asp">Child</a></li>
+                                <li><a href="https://www.w3schools.com/jsref/prop_node_previoussibling.asp">Previous Sibling</a></li>
+                                <li><a href="https://www.w3schools.com/jsref/prop_node_nextsibling.asp">Next Sibling</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex-1">
+                            <h4>
+                                jQuery Methods needed
+                            </h4>
+                            <ul>
+                                <li><a href="https://api.jquery.com/parent/">Parent</a></li>
+                                <li><a href="https://api.jquery.com/children/">Child</a></li>
+                                <li><a href="https://api.jquery.com/prev/">Previous Sibling</a></li>
+                                <li><a href="https://api.jquery.com/next/">Next Sibling</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row center">
+                        <button class="flex-1" id="prev-sib"><i class="bi bi-caret-left-fill"></i> Previous Sibling</button>
+                        <button class="flex-1" id="parent"><i class="bi bi-caret-up-fill"></i> Parent</button>
+                        <button class="flex-1" id="child"><i class="bi bi-caret-down-fill"></i> Child</button>
+                        <button class="flex-1" id="next-sib"><i class="bi bi-caret-right-fill"></i> Next Sibling</button>
+                    </div>
+                    <div id="family-nest">
+                        <div>
+                            <div>
+                            
+                            </div>
+                            <div>
+                            
+                            </div>
+                            <div>
+                            
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                            
+                            </div>
+                            <div class="active">
+                            
+                            </div>
+                            <div>
+                            
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <div>
+                            
+                            </div>
+                            <div>
+                            
+                            </div>
+                            <div>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/family-methods.js"></script>
+</body>
+
+</html>

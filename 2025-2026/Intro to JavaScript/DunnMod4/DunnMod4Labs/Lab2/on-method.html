@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events: On Method</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>.on( ) Method</h1>
+                </header>
+
+                <section>
+                    <p>Due to the fact that jQuery objects are not HTMLElement objects, they will have different members
+                        (properties and methods). This means that methods such as .addEventListener will not work on
+                        jQuery objects. We can still add events to elements selected via jQuery using the .on method.
+                    </p>
+                </section>
+
+                <section>
+                    <h3>.on()</h3>
+                    <p>The <a href="https://api.jquery.com/on/" target="_blank">on method</a> is to a jQuery object as
+                        the addEventListener method is to the HTMLElement object. Much like the addEventListener method,
+                        on expects an argument for the type of event as well as an argument for the function that will
+                        be executed when the event is triggered. </p>
+                    <p>Click the button and look at the results. Note the difference in data types between this and
+                        $(this).</p>
+                    <pre><code>$('#my-button').on('click', function(e){
+    console.log(this);  
+    console.log($(this));      
+});  
+</code></pre>
+                    <button id="my-button">#my-button</button>
+                </section>
+
+                <section>
+                    <h3>Try it</h3>
+                    <p></p>
+                    <p>Select the div#on-example using jQuery. Create two event listeners using the jQuery Object's on()
+                        method. One event should listen for the event of 'mouseenter' and add the class of 'active' to
+                        <em>this</em>. Another event should listen for the event of 'mouseleave' and remove the class of
+                        'active' from <em>this</em></p>
+                    <p><a href="https://api.jquery.com/category/events/mouse-events/" target="_blank">Mouse Events</a>
+                    </p>
+                    <div class="row">
+                        <div id="on-example" class="flex-1 element-example">
+                            #on-example
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </article>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/on-method.js"></script>
+</body>
+
+</html>

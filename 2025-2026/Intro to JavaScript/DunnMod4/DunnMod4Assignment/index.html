@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Management Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Company Management Tool</h1>
+    </header>
+    <main>
+        <div>
+            <div class="content">
+                <article>
+                    <header>
+                        <h1>Conditional UI</h1>
+                    </header>
+                    <section>
+                        <h3>Complete the Form</h3>
+                        <p>
+                            This application should only show one form at a time based on what the user has chosen
+                            in the select element.
+                        </p>
+                        <p>Go to the conditional-ui.js file and complete "Part One," "Part Two," "Part Three," and
+                            "Part Four"</p>
+                    </section>
+
+                    <section>
+                        <div class="row data">
+                            <div class="flex-3 data-add">
+                                <h3>Forms</h3>
+                                <div class="form-select">
+                                    <label for="form-choice">Choose a Folder</label>
+                                    <select id="form-choice">
+                                        <option disabled selected>Select a Form</option>
+                                        <option value="employee">Employee</option>
+                                        <option value="supplier">Supplier</option>
+                                        <option value="customer">Customer</option>
+                                    </select>
+                                </div>
+                                <div class="management-form">
+                                    <form id="employee-form" class="hidden">
+                                        <h4>Employee Form</h4>
+                                        <label for="employee-id">Employee ID</label>
+                                        <input type="number" id="employee-id">
+                                        <label for="employee-first-name">First Name</label>
+                                        <input type="text" id="employee-first-name">
+                                        <label for="employee-last-name">Last Name</label>
+                                        <input type="text" id="employee-last-name">
+                                        <label for="employee-email">Email</label>
+                                        <input type="email" id="employee-email">
+                                        <label for="employee-department">Department</label>
+                                        <select id="employee-department">
+                                            <option disabled selected>Select Department</option>
+                                            <option value="Sales">Sales</option>
+                                            <option value="HR">HR</option>
+                                            <option value="Manufacturing">Manufacturing</option>
+                                        </select>
+                                        <label for="employee-hire-date">Hire Date</label>
+                                        <input type="date" id="employee-hire-date">
+                                        <label for="employee-termination-date">Termination Date</label>
+                                        <input type="date" id="employee-termination-date">
+                                        <button type="submit">Add Employee</button>
+                                    </form>
+                                    <form id="supplier-form" class="hidden">
+                                        <h4>Supplier Form</h4>
+                                        <label for="supplier-id">Supplier ID</label>
+                                        <input type="text" id="supplier-id">
+                                        <label for="company-name">Company Name</label>
+                                        <input type="text" id="company-name">
+                                        <label for="zip-code">Zip Code</label>
+                                        <input type="text" id="zip-code">
+                                        <label for="contact-first-name">Contact First Name</label>
+                                        <input type="text" id="contact-first-name">
+                                        <label for="contact-last-name">Contact Last Name</label>
+                                        <input type="text" id="contact-last-name">
+                                        <label for="contact-email">Contact Email</label>
+                                        <input type="email" id="contact-email">
+                                        <label for="last-delivery-date">Last Delivery Date</label>
+                                        <input type="date" id="last-delivery-date">
+                                        <label for="is-active">Is Supplier Active?</label>
+                                        <input type="checkbox" id="is-active">
+                                        <button type="submit">Add Supplier</button>
+                                    </form>
+                                    <form id="customer-form" class="hidden">
+                                        <h4>Customer Form</h4>
+                                        <label for="customer-id">Customer ID</label>
+                                        <input type="number" id="customer-id">
+                                        <label for="customer-first-name">First Name</label>
+                                        <input type="text" id="customer-first-name">
+                                        <label for="customer-last-name">Last Name</label>
+                                        <input type="text" id="customer-last-name">
+                                        <label for="customer-email">Email</label>
+                                        <input type="email" id="customer-email">
+                                        <label for="customer-phone">Phone</label>
+                                        <input type="tel" id="customer-phone">
+                                        <label for="is-premium">Premium Customer?</label>
+                                        <input type="checkbox" id="is-premium">
+                                        <label for="registration-date">Registration Date</label>
+                                        <input type="date" id="registration-date">
+                                        <button type="submit">Add Customer</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="flex-2 data-list">
+                                <h3>Management Data</h3>
+                                <ul class="tabs">
+                                    <!-- data attributes store values in the html -->
+                                    <li data-tab="view-employees">Employees</li>
+                                    <li data-tab="view-suppliers">Suppliers</li>
+                                    <li data-tab="view-customers">Customers</li>
+                                    <li data-tab="view-all-data" class="active">All</li>
+                                </ul>
+                                <div class="employee-list">
+                                <h4>Employee</h4>
+
+                                </div>
+                                <div class="supplier-list">
+                                <h4>Suppliers</h4>
+
+                                </div>
+                                <div class="customer-list">
+                                <h4>Customers</h4>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                    </section>
+                </article>
+            </div>
+
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

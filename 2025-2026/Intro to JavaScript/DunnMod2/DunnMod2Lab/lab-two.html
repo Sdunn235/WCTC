@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <a href="/lab-three.html">Lab 3</a>
+    <main class="site-width">
+        <section class="widget">
+            <section>
+                <header>
+                    <h3>Area Calc</h3>
+                </header>
+                <div>
+                    <div class="flex">
+                        <div class="flex-1">
+                            <label for="height">Height</label>
+                            <input type="number" id="height" value="0">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex-1">
+                            <label for="width">Width</label>
+                            <input type="number" id="width" value="0">
+                        </div>
+                        <div class="flex">
+                            <div class="flex-1">
+                                <button onclick="displayArea()">Get Area</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Flex">
+                        <div class="flex-1">
+                            <h4 id="area-results">Results: 0</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>RNG</h3>
+                </header>
+                <div>
+                    <div class="flex">
+                        <div class="flex-1">
+                            <label for="top-num" id="top-num-label">Sides: 50</label>
+                            <input type="range" min="2" max="100" value="50" id="top-num" oninput="displaySides()"
+                                onchange="displayRoll()">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex-1">
+                            <button onclick="displayRoll()">Roll the Die</button>
+                        </div>
+                        <div class="flex-1">
+                            <h4 id="roll-result"></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Date Picker</h3>
+                </header>
+                    <div class="flex">
+                        <div class="flex-1">
+                            <button onclick="displayPrev()">&lt; Prev</button>
+                        </div>
+                        <div class="flex-1">
+                            <h4 id="stored-date"></h4>
+                        </div>
+                        <div class="flex-1">
+                            <button onclick="displayNext()">&gt; Next</button>
+                        </div>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <script src="/js/lab-two.js"></script>
+
+</body>
+
+</html>

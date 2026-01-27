@@ -1,0 +1,112 @@
+:root {
+    --dark: #084B83;
+    --light: #E7ECEF;
+    --link: #FF5154;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+    background-size: cover;
+    background-blend-mode: luminosity;
+    min-height: 100vh;
+    padding-top: 10vh;
+}
+
+.vehicles {
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--light);
+    -webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.5);
+}
+
+
+
+.vehicles > form {
+    flex: 2;
+    padding: 20px;
+}
+
+.vehicles > #vehiclesList {
+    flex: 3;
+    background-color: #ffffff;
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.vehicles > form label {
+    font-size: .9em;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+.vehicles > form input {
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.vehicles > form button[type="submit"] {
+    color: var(--light);
+    background-color: var(--link);
+}
+
+.vehicles > form button[type="submit"]:hover {
+    opacity: .8;
+}
+
+.vehicles > form button:focus {
+    outline: 2px solid var(--link);
+}
+
+
+.vehicles > form input:not(:last-child) {
+    margin-bottom: 20px
+}
+
+.vehicle {
+    display: block;
+    padding: 20px 0;
+    margin: 0 10px;
+}
+
+.vehicle:not(:last-child) {
+    border-bottom: 2px solid var(--dark);
+}
+
+[class^="vehicleL"] {
+    font-size: 1.5em;
+}
+
+.vehicle-year {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px)
+{
+    .vehicles {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .vehicles > #vehiclesList {
+        max-height: max-content;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+}

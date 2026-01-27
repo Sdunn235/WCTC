@@ -1,0 +1,20 @@
+#family-nest {
+    display: flex;
+    border: 3px solid var(--color-dark);
+    margin: 3em 0;
+}
+
+#family-nest div {
+    border: 3px solid var(--color-accent);
+    background-color: var(--color-light);
+    flex: 1;
+    min-height: 50px;
+    margin: 1em;
+}
+
+#family-nest div.active {
+    background-color: var(--color-accent);
+
+}
+
+

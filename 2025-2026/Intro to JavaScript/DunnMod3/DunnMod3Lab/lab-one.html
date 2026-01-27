@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Widgets</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <a href="/Lab2/index.html">Lab 2</a>
+    <a href="/Lab3/index.html">Lab 3</a>
+
+    <main>
+        <section id="conditional-widgets">
+            <section>
+                <header>
+                    <h3>Odd/Even</h3>
+                </header>
+                <div>
+                    <div class="row">
+                        <p class="flex-2">
+                            Input a number to see if its odd or even (green means even, red means odd)
+                        </p>
+                        <div class="flex-1">
+                            <label for="odd-even">Number</label>
+                            <input type="number" id="odd-even" onchange="oddEven(this)">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Confirm</h3>
+                </header>
+                <div>
+                   <p id="confirm-results">Click Below to Confirm</p>
+                   <button type="button" onclick="confirmFunction()">Confirm</button>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Text Truthy/Falsy</h3>
+                </header>
+                <div>
+                    <div class="row">
+                        <div class="flex-1">
+                            <label for="text-tf">Enter a Word</label>
+                            <input type="text" id="text-tf" oninput="textTF()">
+                        </div>
+                        <div class="flex-1">
+                            <p id="text-tf-result">Enter a Word!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Number Truthy Falsy</h3>
+                </header>
+                    <div class="row">
+                        <div class="flex-1">
+                            <label for="text-tf">Enter a Number</label>
+                            <input type="number" id="number-tf" oninput="numberTF()">
+                        </div>
+                        <div class="flex-1">
+                            <p id="number-tf-result">Enter a Number!</p>
+                        </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>AM or PM</h3>
+                </header>
+                <div>
+                    <p id="check-am-pm-results">Is it AM or PM?</p>
+                    <button type="button" onclick="checkAmOrPm()">Check if its AM or PM</button>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Logical And</h3>
+                </header>
+                <div>
+                    <div class="row">
+                        <div class="flex-1 radio">
+                            <h4>Value 1</h4>
+                            <label for="l-a-v1-true">true</label>
+                            <input type="radio" name="l-a-v1" id="l-a-v1-true" onchange="logicalAnd()">
+                            <label for="l-a-v1-false">false</label>
+                            <input type="radio" name="l-a-v1" id="l-a-v1-false" onchange="logicalAnd()">
+                        </div>
+                        <div class="flex-1 radio">
+                            <h4>Value 2</h4>
+                            <label for="l-a-v2-true">true</label>
+                            <input type="radio" name="l-a-v2" id="l-a-v2-true" onchange="logicalAnd()">
+                            <label for="l-a-v2-false">false</label>
+                            <input type="radio" name="l-a-v2" id="l-a-v2-false" onchange="logicalAnd()">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 id="l-a-results">Select Values!</h3>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Logical Or</h3>
+                </header>
+                <div>
+                    <div class="row">
+                        <div class="flex-1 radio">
+                            <h4>Value 1</h4>
+                            <label for="l-o-v1-true">true</label>
+                            <input type="radio" name="l-o-v1" id="l-o-v1-true" onchange="logicalOr()">
+                            <label for="l-o-v1-false">false</label>
+                            <input type="radio" name="l-o-v1" id="l-o-v1-false" onchange="logicalOr()">
+                        </div>
+                        <div class="flex-1 radio">
+                            <h4>Value 2</h4>
+                            <label for="l-o-v2-true">true</label>
+                            <input type="radio" name="l-o-v2" id="l-o-v2-true" onchange="logicalOr()">
+                            <label for="l-o-v2-false">false</label>
+                            <input type="radio" name="l-o-v2" id="l-o-v2-false" onchange="logicalOr()">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3 id="l-o-results">Select Values!</h3>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Switch Statement</h3>
+                </header>
+                <div>
+                    <p>Enter some text then choose an option</p>
+                    <label for="switch-output"></label>
+                    <input type="text" id="switch-output">
+
+                    <label for="switch-mode">Select an output mode</label>
+                    <select id="switch-mode" onchange="switchPractice()">
+                        <option selected disabled>--Select--</option>
+                        <option value="alert">Alert</option>
+                        <option value="log">Log</option>
+                        <option value="html">HTML</option>
+                    </select>
+                    <p id="switch-result">HTML</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+
+    <script src="/js/lab-one.js"></script>
+    <script src="/js/conditionals.js"></script>
+</body>
+</html>

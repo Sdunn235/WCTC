@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="site-width">
+
+        <!-- Page Title -->
+        <div class="title">
+            <h1>Mortgage Calculator</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="nav">
+            <div class="flex">
+                <div class="flex-1"><a href="index.html">Mortgage</a></div>
+                <div class="flex-1"><a href="compound.html">Compounding Interest</a></div>
+            </div>
+        </div>
+
+        <!-- Calculator Widget -->
+        <section class="widget">
+
+            <!-- Input Card -->
+            <section>
+                <header>Inputs</header>
+                <div class="stack">
+                    <form>
+                        <div class="flex">
+                            <div class="flex-1">
+                                <label for="principal">Total Loan Amount</label>
+                                <input id="principal" type="number" required>
+                            </div>
+                            <div class="flex-1">
+                                <label for="annualRate">Annual Interest (%)</label>
+                                <input id="annualRate" type="number" required>
+                            </div>
+                            <div class="flex-1">
+                                <label for="years">Loan Length (Years)</label>
+                                <input id="years" type="number" required>
+                            </div>
+                        </div>
+                        <button type="button" onclick="calculateMortgage()">Calculate Monthly Payment</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Results Card -->
+            <section>
+                <header>Result</header>
+                <div class="stack">
+                    <p class="result">Monthly Payment: <span id="monthlyPayment">0</span></p>
+               
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="./js/calc.js"></script>
+</body>
+
+</html>

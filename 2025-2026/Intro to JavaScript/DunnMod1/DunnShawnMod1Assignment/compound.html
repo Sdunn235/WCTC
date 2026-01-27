@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Compounding Interest</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="site-width">
+
+    <!-- Page Title -->
+    <div class="title">
+      <h1>Compounding Interest</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+      <div class="flex">
+        <div class="flex-1"><a href="index.html">Mortgage</a></div>
+        <div class="flex-1"><a href="compound.html">Compounding Interest</a></div>
+      </div>
+    </div>
+
+    <!-- Calculator Widget -->
+    <section class="widget">
+
+      <!-- Input Card -->
+      <section>
+        <header>Inputs</header>
+        <div class="stack">
+          <form>
+            <div class="flex">
+              <div class="flex-1">
+                <label for="P">Principal</label>
+                <input id="P" type="number" required>
+              </div>
+              <div class="flex-1">
+                <label for="r">Annual Interest Rate (%)</label>
+                <input id="r" type="number" required>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="flex-1">
+                <label for="n">Compound Frequency</label>
+                <input id="n" type="number" required>
+              </div>
+              <div class="flex-1">
+                <label for="t">Years</label>
+                <input id="t" type="number" required>
+              </div>
+            </div>
+
+            <button type="button" onclick="calculateCompound()">Calculate Total Amount</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Results Card -->
+      <section>
+        <header>Results</header>
+        <div class="stack">
+          <p class="result">Total Amount : <span id="A">0</span></p>
+          <p class="result">Interest Earned: <span id="interest">0</span></p>
+          <p>Formula: A = P × (1 + r/n)^(n × t)</p>
+          <p class="note">(P = principal; r = annual rate as decimal; n = times compounded per year; t = years; A =
+            total amount)</p>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="./js/calc.js"></script>
+</body>
+
+</html>

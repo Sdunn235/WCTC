@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery: Document Ready Function</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Document Ready Function</h1>
+                </header>
+
+                <section>
+                    <p><a href="https://learn.jquery.com/using-jquery-core/document-ready/">Document Ready Function</a></p>
+                    <p>A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness for you. Code included inside $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
+                    </p>
+<pre><code>$( document ).ready(function() {
+    console.log( "ready!" );
+});</code></pre>
+                    <p>You can use the shorthand $() for $( document ).ready().</p>
+<pre><code>$(function() {
+    console.log( "ready!" );
+});</code></pre>
+                    <p>Add the document.ready function to this page in the including-jquery.js file. You will add this to all of your js files using jQuery. Make sure to include a CDN link in this HTML file. If the jQuery library is not included, you will see that the jQuery object will not be defined.</p>
+                    <figure>
+                        <img src="../images/common-error.png" alt="A common error where jQuery's library is not loaded">
+                    </figure>
+                </section>
+
+                
+    
+            </article>
+        </div>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/jquery/document-ready.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #DEDEDE;
+}
+
+#conditional-widgets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 800px;
+    margin: 30px auto;
+    
+    background-color: #CCC;
+    gap: 2px;
+    border: 2px solid black;
+
+    > section{
+        background-color: white;
+        padding: 10px;
+
+        input {
+            display: block;
+            width: 100%;
+            text-align: justify;
+            padding: 3px;
+            font-size: 1.2rem;
+        }
+
+        label{
+            font-size: .8rem;
+            font-weight: bold;
+        }
+
+        [class^="flex-"]:not(:last-child){
+            border-right: 2px solid darkorchid;
+            padding-right: 1rem;
+        }
+
+        > div{
+            padding: 1rem;
+
+
+            .radio{
+                input, label{
+                    display: inline;
+                    width: fit-content;
+                }
+
+                input:not(:last-child)
+                {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        > header{
+        }
+    } 
+}
+
+.red{
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+}
+.flex-1 {
+    flex: 1;
+}
+.flex-2 {
+    flex: 2;
+}
+.flex-3 {
+    flex: 3;
+}

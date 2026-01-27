@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and DOM Practice: Conditional UI</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/vehicle.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Conditional UI</h1>
+                </header>
+                <section>
+                    <h3>Complete the Form</h3>
+                    <p>
+                        This application should only show one form at a time based on what the user has chosen in the select element.
+                    </p>
+                    <p>Go to the conditional-ui.js file and complete "Part One," "Part Two," "Part Three," and "Part Four"</p>
+                </section>
+
+                <section>
+                    <div class="row vehicles">
+                        <div class="flex-3 vehicle-add">
+                            <h3>Add Vehicle</h3>
+                            <div class="vehicle-select">
+                                <label for="vehicle-choice">Choose a vehicle type</label>
+                                <select id="vehicle-choice">
+                                    <option disabled selected>Select a Vehicle</option>
+                                    <option value="car">Car</option>
+                                    <option value="plane">Plane</option>
+                                    <option value="boat">Boat</option>
+                                </select>
+                            </div>
+                            <div class="vehicle-form">
+                                <form id="car-form" class="hidden">
+                                    <h4>Car Form</h4>
+                                    <label for="car-name">Make and Model</label>
+                                    <input type="text" id="car-name">
+                                    <label for="car-number-doors">Number of Doors</label>
+                                    <input type="number" id="car-number-doors">
+                                    <input type="submit" value="Add Car">
+                                </form>
+                                <form id="plane-form" class="hidden">
+                                    <h4>Plane Form</h4>
+                                    <label for="plane-name">Make and Model</label>
+                                    <input type="text" id="plane-name">
+                                    <label for="plane-wingspan">Wingspan</label>
+                                    <input type="number" id="plane-wingspan">
+                                    <input type="submit" value="Add Plane">
+                                </form>
+                                <form id="boat-form" class="hidden">
+                                    <h4>Boat Form</h4>
+                                    <label for="boat-name">Make and Model</label>
+                                    <input type="text" id="boat-name">
+                                    <label for="boat-hull-length">Hull Length</label>
+                                    <input type="number" id="boat-hull-length">
+                                    <input type="submit" value="Add Boat">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="flex-2 vehicle-list">
+                            <h3>Vehicle Inventory</h3>
+                            <h4>Cars</h4>
+                            <div class="cars-list">
+
+                            </div>
+                            <h4>Planes</h4>
+                            <div class="planes-list">
+
+                            </div>
+                            <h4>Boats</h4>
+                            <div class="boats-list">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <section>
+
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/conditional-ui.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DDD;
+}
+
+form {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #FFFF;
+    padding: 1rem;
+    
+    label {
+        display: block;
+    }
+    input {
+        margin-bottom: 1rem;
+        display: 100%;
+    }
+    button[type="submit"]{
+        display: block;
+        margin: 0 auto;
+    }
+}

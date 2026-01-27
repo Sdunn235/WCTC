@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="site-width">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="for.html">For Loops</a></li>
+                <li><a href="while.html" class="active">While Loops</a></li>
+                <li><a href="dowhile.html">Do While Loops</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="site-width">
+            <header>
+                <h1>
+                    While Loops
+                </h1>
+            </header>
+
+            <section class="lab-problem">
+                <header>
+                    <h3>While loop that continues with user confirmation</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            This while loop is a pre-test loop. The test expression will ask for user confirmation and then run the loop.
+                            The code block inside the while loop may never run if the user selects cancel immediately.
+                        </p>
+                        <input type="button" value="Start Looping" onclick="whileOne()">
+                    </div>
+                    <div class="result flex-2">
+                        <p id="while-one-result"></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="lab-problem">
+                <header>
+                    <h3>While loop that counts to a value</h3>
+                </header>
+                <div class="row">
+                    <div class="setup flex-3">
+                        <p>
+                            You can use a while loop to iterate a certain number of times, much like a for loop. In
+                            fact, a while loop is the basis of a for loop.
+                        </p>
+                        <label for="while-two-count">Count to</label>
+                        <input type="number" id="while-two-count">
+                        <input type="button" value="Start Looping" onclick="whileTwo()">
+                    </div>
+                    <div class="result flex-2">
+                        <p id="while-two-result"></p>
+                    </div>
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/while.js"></script>
+</body>
+
+</html>

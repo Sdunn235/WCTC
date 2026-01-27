@@ -1,0 +1,195 @@
+/* Colors */
+:root {
+  --color-dark: #080708;
+  --color-light: #B8D5B8;
+  --color-main: #05A8AA;
+  --color-link: #93032E;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F6F8F7;
+  --color-border: #D9E3DA;
+  --navbar-text: #FFFFFF;
+  --navbar-hover: #33CCCC;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Layout */
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Page Container */
+.site-width {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+/* Page Title */
+.title {
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.title h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: var(--color-main);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav .flex-1 {
+    flex: 1;
+    text-align: center;
+}
+
+.nav a {
+    display: inline-block;
+    color: var(--navbar-text);
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+.nav a:hover {
+    background-color: var(--navbar-hover);
+    color: #fff;
+}
+
+.nav a:active {
+    transform: translateY(3px);
+}
+
+/* Widget / Card Grid */
+.widget {
+    margin-top: 1.25rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+    .widget {
+        grid-template-columns: 1fr;
+    }
+}
+
+.widget>section {
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.widget>section>header {
+    background-color: var(--color-main);
+    color: #FFFFFF;
+    padding: 0.6rem 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.widget>section>div {
+    padding: 0.8rem;
+    background: var(--color-surface-2);
+}
+
+/* Input and Button Styling */
+label {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.55rem 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+button {
+    background-color: var(--color-link);
+    color: #FFFFFF;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0.5rem auto 0;
+    transition: opacity 120ms ease, transform 60ms ease;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+/* Stack Utility (formerly stack-md) */
+.stack>*+* {
+    margin-top: 0.75rem;
+}
+
+/* Text Styles */
+.result {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Flex Helpers */
+.flex {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+@media (max-width: 700px) {
+    .flex {
+        flex-direction: column;
+    }
+}

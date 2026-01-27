@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events: Event Types</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <nav>
+                <!--Generated via JavaScript-->
+            </nav>
+        </aside>
+        <div class="content">
+            <article>
+                <header>
+                    <h1>Event Types</h1>
+                </header>
+                <section>
+                    <h3>The Event Object</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>Event Types are the type of event that was triggered. click, change, and submit, are common types of events.</p>
+                            <p><a href="https://www.w3schools.com/jsref/event_type.asp" target="_blank">w3s: Event Object Type</a></p>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section>
+                    <h3>Load Event</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>Attach an event to the window object using an event listener. Listen for the event of 'load'. Log the timeStamp of the page loaded event to the console.</p>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event" target="_blank">Mozilla: Load Event</a></p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>Focus and Blur</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>Add two events to the following input#focus-and-blur. One event should trigger on focus, and one event should trigger on blur. On focus, give the input the class of 'active'. You can use the keyword this and the classList to acomplish this.
+                            </p>
+                            <p><a href="https://www.w3schools.com/jsref/event_onfocus.asp" target="_blank">w3s: Focus Event</a></p>
+                            <p><a href="https://www.w3schools.com/jsref/event_onblur.asp" target="_blank">w3s: Blur Event</a></p>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <form action="javascript:void(0)">
+                            <label for="focus-and-blur">Focus and Blur</label>  
+                            <input type="text" id="focus-and-blur">
+                        </form>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>Mouse Position</h3>
+                    <div class="row ">
+                        <div class="flex-1">
+                            <p>Add a mousemove event to the document. Upon triggering, the event listener should update input#mouse-xy to display the x and y coordinates in this format: (x, y). Adding an event to the document object is like adding an event to the window object.
+                            </p>
+                            <p><a href="https://www.w3schools.com/jsref/event_onmousemove.asp" target="_blank">w3s: Mouse Move Event</a></p>
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <form action="javascript:void(0)">
+                            <label for="mouse-xy">Mouse Position</label>  
+                            <input type="text" id="mouse-xy" readonly>
+                        </form>
+                    </div>
+                </section>
+
+            </article>
+        </div>
+    </main>
+    <script src="../js/nav.js"></script>
+    <script src="../js/events/event-types.js"></script>
+</body>
+
+</html>

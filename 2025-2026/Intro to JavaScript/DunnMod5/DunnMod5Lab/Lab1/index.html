@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5: Lab 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <main>
+        <article>
+            <header>
+                <h1>Common &nbsp;jQuery Methods</h1>
+            </header>
+
+
+            <section id="exercise-1" data-order="1">
+                <h2>HTML Content Method</h2>
+                <div class="work-area-container">
+                    <div class="work-area intro">
+                        <div class="requirements flex-1">
+                            <h3>.html() Method</h3>
+                            <a href="https://api.jquery.com/html/" target="_blank">Documentation</a>
+                            <p>Get the HTML contents of the first element in the set of matched elements or set the HTML
+                                contents of every matched element.</p>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.html() to <em>get</em> information</h3>
+                            <p>Use the .html() method with no arguments to get the
+                                contents of the element with the id of "html-as-get".</p>
+                            <p>Log the results to the console</p>
+                        </div>
+                        <div class="results flex-2">
+
+                            <div class="flex flex-center">
+                                <div id="html-as-get" class="demo">
+                                    <h4>#html-as-get</h4>
+                                    <p>Log the results of the HTML</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.html() to <em>set</em> information</h3>
+                            <p>Use the .html() method with <abbr title=""></abbr> <a href="https://api.jquery.com/Types/#htmlString"
+                                    target="_blank">HTML String</a>
+                                as the argument to update the contents of the element with the id of "html-as-set" to
+                                the following:</p>
+<pre>
+&lt;h4&gt;This has been updated&lt;/h4&gt;
+&lt;p&gt;with an HTML string&lt;/p&gt;
+</pre>          </div>
+                        <div class="results flex-2">
+
+                            <div class="flex flex-center">
+                                <div id="html-as-set" class="demo">
+                                    <h4>#html-as-set</h4>
+                                    <p>Replace the content in this div</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.html() to <em>set</em> information on multiple elements</h3>
+                            <p>Use the .html() method with a <a href="https://api.jquery.com/Types/#htmlString"
+                                    target="_blank">HTML String</a>
+                                as the argument to update the contents of all elements with the class of "html-set-many"
+                                to the following:
+                            </p>
+<pre>
+&lt;h4&gt;One method&lt;/h4&gt;
+&lt;p&gt;updates all of these&lt;/p&gt;
+</pre>
+                        </div>
+                        <div class="results flex-2">
+
+                            <div class="flex">
+                                <div class="demo html-set-many flex-1">
+                                    <h4>.html-set-many</h4>
+                                    <p>One method, many elements</p>
+                                </div>
+                                <div class="demo html-set-many flex-1">
+                                    <h4>.html-set-many</h4>
+                                    <p>One method, many elements</p>
+                                </div>
+                                <div class="demo html-set-many flex-1">
+                                    <h4>.html-set-many</h4>
+                                    <p>One method, many elements</p>
+                                </div>
+                                <div class="demo html-set-many flex-1">
+                                    <h4>.html-set-many</h4>
+                                    <p>One method, many elements</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="exercise-2" data-order="2">
+
+                <h2>Text Content Method</h2>
+                <div class="work-area-container">
+                    <div class="work-area intro">
+                        <div class="requirements flex-1">
+                            <h3>.text() Method</h3>
+                            <a href="https://api.jquery.com/text/" target="_blank">Documentation</a>
+                            <p>
+                                Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.text() to <em>get</em> information</h3>
+                            <p>Use the .text() method to output the text of the div with the id of "text-as-get"</p>
+                            <p>Log the results to the console</p>
+                        </div>
+                        <div class="results flex-2">
+
+                            <div class="flex flex-center">
+                                <div id="text-as-get" class="demo">
+                                    <h4>#text-as-get</h4>
+                                    <p>Log the results of the HTML</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.text() to <em>set</em> information</h3>
+                            <p>Use the .text() method to update the text of the div with the id of "text-as-set" to the following:</p>
+<pre>
+This text has been updated
+</pre>
+                        </div>
+                        <div class="results flex-2">
+
+                            <div class="flex flex-center">
+                                <div id="text-as-set" class="demo">
+                                    <h4>#text-as-set</h4>
+                                    <p>Update the text on this div</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.text() to <em>append</em> information</h3>
+                            <p>Use the .text() method get the text of the <em>p</em> in the div with the id of "text-to-append"
+                            then concatenate your name to the end and replace the <em>p</em> with your appended text.</p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div id="text-to-append" class="demo">
+                                    <h4>#text-to-append</h4>
+                                    <p>Append your name here: </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.text() to <em>append</em> a list</h3>
+                            <p>Use the .text() method to append " easily updated" to each list item in the div with the id of "text-in-a-list"
+                                using only a single selector.
+                            </p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div id="text-in-a-list" class="demo">
+                                    <h4>#text-in-a-list</h4>
+                                    <ul>
+                                        <li>Item One</li>
+                                        <li>Item Two</li>
+                                        <li>Item Three</li>
+                                        <li>Item Four</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="exercise-3" data-order="3">
+                <h2>Working with Values</h2>
+                <div class="work-area-container">
+                    <div class="work-area intro">
+                        <div class="requirements flex-1">
+                            <h3>.val() Method</h3>
+                            <a href="https://api.jquery.com/val/" target="_blank">Documentation</a>
+                            <p>
+                                Get the current value of the first element in the set of matched elements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.val() to <em>get</em> values</h3>
+                            <p>Use the .val() method get the values of the div with the id of the following:</p>
+                            <ul>
+                                <li>get-val-text-input</li>
+                                <li>get-val-number-input</li>
+                                <li>get-val-select</li>
+                            </ul>
+                            <p>Log the values and the data types. Use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof operator</a></p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div class="">
+                                    <label for="get-val-text-input">#get-val-text-input</label>
+                                    <input type="text" id="get-val-text-input" value="This is the value">
+                                    <label for="get-val-number-input">#get-val-number-input</label>
+                                    <input type="number" id="get-val-number-input" value="10">
+                                    <label for="get-val-select">#get-val-select</label>
+                                    <select  id="get-val-select">
+                                        <option value="1">One</option>
+                                        <option value="2" selected>Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.val() to <em>set</em> a value</h3>
+                            <p>Use the .val() method to set the value of the input with the id of "set-val-text-input" by using an argument of "Updated"</p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div class="">
+                                    <input type="text" value="Update Me" id="set-val-text-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="exercise-4" data-order="4">
+                <h2>Manipulating Styling</h2>
+                <div class="work-area-container">
+
+                    <div class="work-area intro">
+                        <div class="requirements flex-1">
+                            <h3>.css() Method</h3>
+                            <a href="https://api.jquery.com/css/" target="_blank">Documentation</a>
+                            <p>
+                                Get the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.css() to <em>get</em> values</h3>
+                            <p>Use the .css() method get the background color of the div with the id of "get-bg-css" by using the correct property as the argument.</p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div id="get-bg-css" class="demo">
+                                    <h4>#get-bg-css</h4>
+                                    <p>Get the background color</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.css() to <em>set</em> values</h3>
+                            <p>Use the .css() method set the background color of the div with the id of "set-bg-css" by providing the first argument of the property, and the second argument of the new value.</p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div id="set-bg-css" class="demo">
+                                    <h4>#set-bg-css</h4>
+                                    <p>Set the background color to #D3D3D3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="work-area intro">
+                        <div class="requirements flex-1">
+                            <h3>.addClass() Method</h3>
+                            <a href="https://api.jquery.com/addclass/" target="_blank">Documentation</a>
+                            <p>
+                                Adds the specified class(es) to each element in the set of matched elements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.addClass() to <em>add</em> a class</h3>
+                            <p>Use the .addClass() method to add the class of "active" to the div with the id of "add-active"</p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div id="add-active" class="demo">
+                                    <h4>#add-active</h4>
+                                    <p>Add the class of active to this div</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work-area intro">
+                        <div class="requirements flex-1">
+                            <h3>.removeClass() Method</h3>
+                            <a href="https://api.jquery.com/addclass/" target="_blank">Documentation</a>
+                            <p>
+                                Remove a single class, multiple classes, or all classes from each element in the set of matched elements.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="work-area">
+                        <div class="requirements flex-3">
+                            <h3>.removeClass() to <em>remove</em> a class</h3>
+                            <p>Use the .removeClass() method to remove the class of "off" to the div with the id of "remove-off"</p>
+                        </div>
+                        <div class="results flex-2">
+                            <div class="flex flex-center">
+                                <div id="remove-off" class="demo off">
+                                    <h4>#remove-off</h4>
+                                    <p>Remove the class of off from this div</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

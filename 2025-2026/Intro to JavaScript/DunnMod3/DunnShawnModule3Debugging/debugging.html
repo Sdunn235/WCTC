@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I member this is Lab 3 Debugging</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Custom font via Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="logo">
+                    <span class="logo-line-one">Shawn Dunn</span>
+                    <span class="logo-line-two">Mod 3 Debugging</span>
+                </div>
+                <ul class="items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="debugging.html" class="active">Debugging Exercises</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper">
+            <h1>
+                Debugging Practice
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div>
+                <p>
+                    Make sure to use the debugger; keyword. This will pause the program in the browser (as long as you
+                    have the console window up in the browser) and you can look at the current values in the console
+                    window.
+                </p>
+                <p>
+                    Use the "Step Over" button in the console to go statement by statement through your code.
+                </p>
+                <p>
+                    Check your data types.
+                </p>
+                <p>
+                    Check your values.
+                </p>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem One</span>
+                    <span class="problem-category">Console Error: none given</span>
+                    <p>
+                        This loop should get the value from the input and upon clicking the button the results 1 through
+                        20 should be output in the results sections.
+                    </p>
+                    <input type="number" id="debug-one-input" value="20" readonly>
+                    <input type="button" value="Run Test One" onclick="debugTestOne()">
+                </div>
+                <div class="problem-result">
+                    <div id="debug-one-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Two</span>
+                    <span class="problem-category"><a
+                            href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError'
+                            target="_blank">Console Error: TypeError</a></span>
+                    <p>
+                        This loop should get the value from the input and upon clicking the button the results 1 through
+                        20 should be output in the results sections.
+                    </p>
+                    <input type="text" id="debug-two-input" value="20" readonly>
+                    <input type="button" value="Run Test Two" onclick="debugTestTwo()">
+                </div>
+                <div class="problem-result">
+                    <div id="debug-two-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Three</span>
+                    <span class="problem-category"><a
+                            href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError'
+                            target="_blank">Console Error: ReferenceError</a></span>
+                    <p>
+                        This button should get the input value and alert it.
+                    </p>
+                    <input type="text" id="debug-three-input" value="Alert Me" readonly>
+                    <input type="button" value="Run Test Three" onclick="debugTestTree()">
+                </div>
+                <div class="problem-result">
+                    <div id="debugResultThree">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Four</span>
+                    <span class="problem-category">Console Error: none given</span>
+                    <p>
+                        Upon clicking this button, the first number should be checked to see if it is between the second
+                        and third numbers.
+                    </p>
+                    <label for="debug-four-input-check">Check this number:</label>
+                    <input type="number" id="debug-four-input-check" value="11" readonly>
+
+
+                    <label for="debug-four-input-one">Between:</label>
+                    <input type="number" id="debug-four-input-one" value="5" readonly>
+                    <label for="debug-four-input-two">and</label>
+                    <input type="number" id="debug-four-input-two" value="10" readonly>
+                    <input type="button" value="Run Test Four" onclick="debugTestFour()">
+                </div>
+                <div class="problem-result">
+                    <div id="debug-four-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Five</span>
+                    <span class="problem-category">Console Error: none given</span>
+                    <p>
+                        This loop should get an increment value from the user. The program will use this value to count
+                        from 1 to 50 by the increment supplied. For example, a value of 2 should count 1, 3, 5, 7, etc.
+                    </p>
+                    <input type="number" id="debug-five-input" value="2" readonly>
+                    <input type="button" value="Run Test Five" onclick="debugTestFive()">
+                </div>
+                <div class="problem-result">
+                    <div id="debug-five-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Problem Six</span>
+                    <span class="problem-category">Console Error: none given</span>
+                    <p>
+                        After getting a ship length from the user, the onclick event should pass it as an argument for a
+                        parameter in the function and a loop should check if all ships (pirate and cruise) are above the
+                        listed length and then display the ships.
+                    </p>
+                    <input type="number" id="debug-six-input" value="1080" readonly>
+                    <input type="button" value="Run Test Six" onclick="debugTestSix()">
+                </div>
+                <div class="problem-result">
+                    <div id="debug-six-result">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/debugging.js"></script>
+
+</body>
+
+</html>

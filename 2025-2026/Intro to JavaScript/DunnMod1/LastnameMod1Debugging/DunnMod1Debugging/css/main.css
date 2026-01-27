@@ -1,0 +1,85 @@
+:root {
+  /* colors */
+  --cust-color-main: #5368A6;
+  --cust-color-accent: #C44900;
+  --cust-color-accent-shade: #893300;
+  --cust-color-accent-tint: #d6804d;
+
+  /* widths */
+  --cust-max-width: 500px;
+
+  /* typefaces */
+  --cust-typeface: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-family: var(--cust-typeface);
+  font-size: 3em;
+  color: var(--cust-color-main);
+}
+
+.content {
+  max-width: var(--cust-max-width);
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-family: var(--cust-typeface);
+  font-size: 1em;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button[type="button"] {
+  background-color: var(--cust-color-accent);
+  color: white;
+  font-family: var(--cust-typeface);
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 3px;
+  margin-top: 40px;
+}
+
+button[type="button"]:hover {
+  background-color: var(--cust-color-accent-shade);
+}
+
+button[type="button"]:active {
+  background-color: var(--cust-color-accent-tint);
+}
+
+button:read-only:not([type="button"]) {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+form {
+  width: 200px;
+  margin: 0 auto;
+  background-color: #DDDD;
+  padding: 1rem;
+
+  label {
+    display: block;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    display: 100%;
+  }
+
+  button[type="button"] {
+    display: block;
+    margin: 0 auto;
+  }
+}

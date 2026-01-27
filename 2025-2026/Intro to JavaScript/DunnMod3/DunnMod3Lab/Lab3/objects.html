@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Looping</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/my-styles.css">
+
+    <!-- Custom font via Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="logo">
+                    <span class="logo-line-one">FirstName LastName</span>
+                    <span class="logo-line-two">Mod 3 Lab 3</span>
+                </div>
+
+                <ul class="items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="looping-practice.html">Looping Practice</a></li>
+                    <li><a href="objects.html" class="active">Looping Objects</a></li>
+                    <li><a href="future.html">Future Concepts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="wrapper">
+            <h1>
+                Object Looping
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <p>
+                Looping is an incredibly powerful tool, especially when it comes to a collection of objects. To practice
+                looping, we have an array of students. Each student used a Student constructor and has the following
+                properties:
+            <ul>
+                <li>firstName</li>
+                <li>lastName</li>
+                <li>program</li>
+                <li>semester</li>
+            </ul>
+            <p>
+                All students also have the following method which creates an div containing all student information:
+            <ul>
+                <li>createElement()</li>
+            </ul>
+            </p>
+            <br>
+            <br>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Example</span>
+                    <span class="problem-category">Basic Object Looping</span>
+                    <p>
+                        You can loop through collections of items by using a for loop. Using a basic for loop, you can
+                        loop through each object in the array. Here we have a premade list of students and are looping
+                        through each student. By default, this project does not have styling for these items. You will
+                        add that next.
+                    </p>
+                    <input type="button" value="Run Example Loop" onclick="exampleLoop()">
+                </div>
+                <div class="problem-result">
+                    <div id="example-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Styling</span>
+                    <span class="problem-category">Create Styles for the Elements</span>
+                    <p>
+                        Sometimes you will create elements purely through code. These elements will not exist until the
+                        a script has been executed. You can style for these elements, even if none of them exist yet, by
+                        creating styles that will match the output. Any css selectors will work, but it is typical to
+                        use class selectors.
+                    </p>
+                    <p>
+                        The following has four different classes that were assigned in the JavaScript code. Style using
+                        class selectors (note the period):
+                    <ul>
+                        <li>.student { /*styles here*/ }</li>
+                        <li>.student-name { /*styles here*/ }</li>
+                        <li>.student-program { /*styles here*/ }</li>
+                        <li>.student-semester { /*styles here*/ }</li>
+                    </ul>
+                    </p>
+                    <p>
+                        Add styling for these elements in the myStyles.css file.
+                    </p>
+                </div>
+                <div class="problem-result">
+                    <div class="student">
+                        <span class="student-name">Pamela Dwayne</span>
+                        <span class="student-program">Computer Support Specialist</span>
+                        <span class="student-semester">Semester 2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Try Looping an Object</span>
+                    <span class="problem-category">Basic Object Looping</span>
+                    <p>
+                        Now that your objects are styled, set up a loop for the students array on your own. You can look
+                        at the first example for guidance.
+                    </p>
+                    <!--Need to add a click event to the button -->
+                    <input type="button" value="Run Example Loop" onclick="firstLoop()">
+
+                </div>
+                <div class="problem-result">
+                    <div id="first-loop-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Try Looping in Reverse</span>
+                    <span class="problem-category">Basic Object Looping</span>
+                    <p>
+                        Do the same thing, but backwards.
+                    </p>
+                    <!--Need to add a click even to the button -->
+                    <input type="button" value="Run Example Loop" onclick="secondLoop()">
+
+                </div>
+                <div class="problem-result">
+                    <!--Need to add an element for the results -->
+                    <div id="second-loop-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Use a Different Loop</span>
+                    <span class="problem-category">Basic Object Looping</span>
+                    <p>
+                        Do the same thing again, but with a different type of loop.
+                    </p>
+                    <!--Need to add a click even to the button -->
+                    <input type="button" value="Run Example Loop" onclick="thirdLoop()">
+
+                </div>
+                <div class="problem-result">
+                    <!--Need to add an element for the results -->
+                    <div id="third-loop-result">
+
+                    </div>
+                </div>
+            </div>
+            <div class="problem">
+                <div class="problem-info">
+                    <span class="problem-header">Sorting</span>
+                    <span class="problem-category">Basic Sorting with a Conditional</span>
+                    <p>
+                        You can use filters as a condition inside of the loop. This is a very basic way to sort an
+                        array. We will look into more advanced sorting techniques in future modules. Sort the list
+                        according to the selected filters.
+                    </p>
+                    <select id="student-program">
+                        <option value="Any">Any Program</option>
+                        <option value="Computer Support Specialist">Computer Support Specialist</option>
+                        <option value="Data and Analytics Specialist">Data and Analytics Specialist</option>
+                        <option value="Network Specialist">Network Specialist</option>
+                        <option value="Web and Software Developer">Web and Software Developer</option>
+                    </select>
+
+                    <select id="student-semester">
+                        <option value="0">Any Semester</option>
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                    </select>
+                    <input type="button" value="Run Filter Loop" onclick="filteringLoop()">
+                </div>
+                <div class="problem-result">
+                    <div id="sorting-result">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/objects.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Student Enrollment Form</h1>
+
+      <!-- Form card -->
+      <div id="student-card">
+        <h2>Form</h2>
+        <section>
+          <form action="javascript:addStudent()" id="student-form">
+            <label for="student-first-name">Student's First Name</label>
+            <input type="text" id="student-first-name" required>
+
+            <label for="student-last-name">Student's Last Name</label>
+            <input type="text" id="student-last-name" required>
+
+            <label for="student-program">Student's Program</label>
+            <input type="text" id="student-program" required>
+
+            <label for="student-edate">Enrollment Date</label>
+            <input type="date" id="student-edate" required>
+
+            <button type="submit" class="btn-primary">Add Student</button>
+          </form>
+        </section>
+      </div>
+
+      <!-- Enrolled Students card -->
+      <div id="student-card2" hidden> <!-- In reference to hidden https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/hidden-->
+        <h2>Enrolled Students</h2>
+        <section id="students"></section>
+      </div>
+
+    </article>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

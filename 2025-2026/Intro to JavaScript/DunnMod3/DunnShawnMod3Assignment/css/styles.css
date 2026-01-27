@@ -1,0 +1,449 @@
+/* The Ai prompts here on VS Code to create the css
+Can you look through my main.js and index.html and make a basic css in my styles.css
+I like to have a root for all the color and default screen width then followed by a reset to default using *{ } then do all the styling */
+
+/* Root Variables */
+:root {
+    --primary-color: #2980b9;
+    --primary-dark: #229954;
+    --secondary-color: #27ae60;
+    --secondary-dark: #EEEEE;
+    --accent-color: #f1c40f;
+    --text-color: #2c3e50;
+    --text-light: #555;
+    --text-muted: #7f8c8d;
+    --background-color: #f0f8f5;
+    --white: #fff;
+    --light-gray: hsl(133, 67%, 86%);
+    --border-color: #a9dfbf;
+    --light-text: #ecf0f1;
+    --max-width: 1200px;
+}
+
+/* Reset to Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--accent-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .menu {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.logo-line-one {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.logo-line-two {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+nav .items {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav .items a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav .items a:hover {
+    color: var(--primary-dark);
+}
+
+/* Header */
+header {
+    background-color: var(--secondary-dark);
+    color: var(--accent-color);
+}
+
+header .wrapper {
+    padding: 0 20px;
+    background-color: var(--primary-dark);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/* Footer Section */
+footer{
+    text-align: center;
+}
+/* Restaurant Filter Section */
+.restaurant {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 30px;
+    align-items: start;
+}
+
+.restaurant-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.restaurant-info {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+/* Filter Group Styles */
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.radio-group {
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio-group h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.25rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 400;
+    color: var(--text-color);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-left: 0;
+    accent-color: var(--primary-dark);
+    cursor: pointer;
+}
+
+.restaurant-header {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.restaurant-category {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.restaurant-info p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.restaurant-info label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.restaurant-info select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: border-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+
+.restaurant-info input[type="button"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restaurant-info input[type="button"]:hover {
+    background-color: var(--primary-dark);
+    color: var(--accent-color);
+}
+
+.restaurant-info button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Restaurant Form Styles */
+.add-restaurant-section {
+    margin-top: 2rem;
+}
+
+.restaurant-info input[type="text"],
+.restaurant-info input[type="url"]{
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    background-color: var(--white);
+    transition: border-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+.restaurant-info input[type="text"]:focus,
+.restaurant-info input[type="url"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+
+.restaurant-info button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restaurant-info button:hover {
+    background-color: var(--primary-dark);
+    color: var(--accent-color);
+}
+
+.restaurant-info button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Restaurant Results */
+.restaurant-result {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+#sorting-result {
+    display: block;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+input[type="radio"]{
+    margin-top: 5px;
+}
+#sorting-result .restaurant {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(224, 235, 217);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-dark);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    align-items: flex-start;
+}
+
+#sorting-result .restaurant:hover {
+    transform: translateY(-2px) translateX(2px);
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+#sorting-result .restaurant img {
+    flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.restaurant-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#sorting-result .restaurant span {
+    display: block;
+}
+
+.restaurant-name {
+    font-size: 1.9rem;
+    font-weight: 700;
+    border-bottom: solid 3px var(--primary-dark);
+    padding: 3px;
+    color: darkgreen;
+}
+
+.restaurant-address {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+    border-bottom: solid 2px var(--primary-dark);
+    padding: 3px;
+}
+
+.restaurant-isGluten,
+.restaurant-isVegan,
+.restaurant-isLocal,
+.restaurant-rating,
+.restaurant-review {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+    padding: 3px;
+    border-bottom: solid 1px var(--primary-dark);
+}
+
+.restaurant-rating {
+    font-weight: 700;
+    color: orangered;
+}
+.restaurant-review {
+    border-bottom: none;
+    color: darkgreen;
+}
+
+/* Main Content */
+main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurant {
+        grid-template-columns: 1fr;
+    }
+
+    .restaurant-sidebar {
+        order: 1;
+    }
+
+    .restaurant-result {
+        order: 2;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .logo-line-one {
+        font-size: 1.2rem;
+    }
+
+    nav .items {
+        gap: 1rem;
+    }
+
+    #sorting-result .restaurant {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #sorting-result .restaurant img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .restaurant-data {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .radio-group label {
+        margin-bottom: 0.5rem;
+    }
+}

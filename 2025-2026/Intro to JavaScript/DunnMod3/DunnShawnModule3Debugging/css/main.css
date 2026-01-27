@@ -1,0 +1,228 @@
+:root {
+    /* colors */
+    --cust-main-color: #589AAF;
+    --cust-accent-color: #325b67;
+    --cust-text-color: #323232;
+    --cust-text-color-reverse: #FFFFFF;
+    --cust-link-color: #CA3435;
+    --cust-background-color: #EDEDED;
+
+    /* widths */
+    --cust-max-width: 900px;
+
+    /* typefaces */
+    --cust-typeface: 'Oswald', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: var(--cust-max-width);
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--cust-background-color);
+}
+
+nav {
+    text-align: center;
+    background-color: var(--cust-main-color);
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu>.logo {
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: left;
+}
+
+nav .menu>.logo>span.logo-line-one {
+    color: var(--cust-text-color-reverse);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: var(--cust-typeface);
+    font-size: 20px;
+}
+
+nav .menu>.logo>span.logo-line-two {
+    color: var(--cust-text-color-reverse);
+    font-style: italic;
+    font-family: var(--cust-typeface);
+}
+
+nav .menu>.items {
+    align-items: right;
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex; 
+    justify-content: right;
+}
+
+nav ul>li>a {
+    text-decoration: none;
+    color: var(--cust-text-color-reverse);
+    padding: 20px;
+    display: block;
+    transition: background .5s;
+    font-family: var(--cust-typeface);
+    font-size: 20px;
+}
+
+nav ul>li>a:hover {
+    text-decoration: none;
+    background-color: var(--cust-link-color);
+}
+
+nav ul>li>a.active {
+    background-color: var(--cust-accent-color); 
+}
+
+nav ul>li>a.active:hover {
+    background-color: var(--cust-link-color);
+}
+
+
+main {
+    margin-bottom: 50px;
+}
+
+
+header {
+    padding: 40px;
+}
+
+
+
+h1 {
+    font-family: var(--cust-typeface);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.problem {
+    padding: 50px;
+    box-shadow:  0px 40px 10px -40px rgba(0,0,0,.2),  0px -40px 10px -40px rgba(0,0,0,.2);
+    transition: box-shadow 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    margin-bottom: 60px;
+    display: flex;
+    opacity: .6;
+}
+
+.problem:hover {
+    padding: 50px;
+    box-shadow:  0px 40px 15px -40px rgba(0,0,0,.2),  0px -40px 15px -40px rgba(0,0,0,.2);
+    opacity: 1;
+    
+}
+
+.problem>.problem-info {
+    border-right: 1px solid rgba(0,0,0,.2);
+    flex: 3;
+    padding-right: 20px;
+}
+
+main li {
+    margin-left: 20px;
+}
+
+.problem>.problem-info>.problem-header {
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+}
+
+.problem>.problem-info>.problem-category {
+    font-weight: lighter;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.problem>.problem-result {
+    border-right: 1px solid rgba(0,0,0,.2);
+    flex: 2;
+    padding-left: 20px;
+}
+
+input[type=button]
+{
+    color: var(--cust-text-color-reverse);
+    background-color: var(--cust-link-color);
+    border: none;
+    padding: 10px;
+}
+
+select {
+    width: 60%;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+    color:var(--cust-link-color);
+    outline:none;
+    border: none;
+}
+
+input[type=button]:active
+{
+    opacity: .5;
+}
+
+input[type=text]:read-only,input[type=number]:read-only {
+    opacity: .8;
+    outline: none;  
+}
+
+input {
+    padding: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a{
+    color: var(--cust-link-color);
+}
+
+h2 {
+    font-family: var(--cust-typeface);
+    font-weight: 500;
+}
+
+.problem>.problem-info.no-border {
+    border-right: none;
+}
+
+pre {
+    background-color: #dbdbdb;
+    padding: 5px;
+}
+
+#onMouseOver, #onMouseOverJQuery {
+    background-color: var(--cust-accent-color);
+    color: var(--cust-text-color-reverse);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#onMouseOver > p, #onMouseOverJQuery > p {
+    padding: 30px 0;
+}

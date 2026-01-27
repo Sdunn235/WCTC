@@ -1,0 +1,48 @@
+:root {
+    /* colors */
+    --cust-main-color: #589AAF;
+    --cust-accent-color: #325b67;
+    --cust-text-color: #323232;
+    --cust-text-color-reverse: #FFFFFF;
+    --cust-link-color: #CA3435;
+    --cust-background-color: #EDEDED;
+
+    /* widths */
+    --cust-max-width: 900px;
+
+    /* typefaces */
+    --cust-typeface: 'Oswald', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.student{
+    margin: 5px;
+    background-color: #e2c79a;
+    display: flex;
+    padding: 5px;
+    text-align: center;
+}
+
+.student-name{
+    flex: 1;
+    padding: 5px;
+    font-weight: bolder;
+    border-right: 2px solid;
+}
+.student-program{
+    flex: 1;
+    padding: 5px;
+    border-right: 2px solid;
+        
+}
+.student-semester{
+    padding: 5px;
+    flex: 1;
+    font-style: italic;
+}
